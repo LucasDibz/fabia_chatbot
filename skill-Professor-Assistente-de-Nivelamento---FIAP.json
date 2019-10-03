@@ -1,0 +1,4149 @@
+{
+  "name": "Professor Assistente de Nivelamento - FIAP",
+  "intents": [
+    {
+      "intent": "pra_que_serve_pesquisa_sequencial_com_sentinela",
+      "examples": [
+        {
+          "text": "Pra que serve busca sequencial com sentinela"
+        },
+        {
+          "text": "Pra que serve pesquisa sequencial com sentinela em lógica de programação"
+        },
+        {
+          "text": "Busca sequencial com sentinela pra que serve"
+        },
+        {
+          "text": "Pesquisa sequencial com sentinela pra que serve"
+        },
+        {
+          "text": "Pra que serve pesquisa sequencial com sentinela"
+        },
+        {
+          "text": "Pra que serve busca sequencial com sentinela em lógica de programação"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "pra_que_serve_pesquisa_binaria",
+      "examples": [
+        {
+          "text": "Busca binária o que é"
+        },
+        {
+          "text": "Pra que serve uma busca binária"
+        },
+        {
+          "text": "Pra que serve pesquisa binária em lógica de programação"
+        },
+        {
+          "text": "Pra que serve pesquisa binária"
+        },
+        {
+          "text": "Pesquisa binária pra que serve"
+        },
+        {
+          "text": "Pra que serve uma busca binária em lógica de programação"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "o_que_e_variavel",
+      "examples": [
+        {
+          "text": "O que é variável em programação"
+        },
+        {
+          "text": "Não sei o que é uma variável"
+        },
+        {
+          "text": "Variável o que é"
+        },
+        {
+          "text": "O que é variável"
+        },
+        {
+          "text": "Me ensine variáveis"
+        },
+        {
+          "text": "Variável em programação o que é"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "o_que_e_analise_algoritmica",
+      "examples": [
+        {
+          "text": "O que você sabe sobre análise algorítmica"
+        },
+        {
+          "text": "Conte-me o que sabe sobre análise algorítmica"
+        },
+        {
+          "text": "Me diga o que é análise algorítmica"
+        },
+        {
+          "text": "Me fale sobre análise algorítmica"
+        },
+        {
+          "text": "Análise algorítmica o que é"
+        },
+        {
+          "text": "Não sei sobre análise algorítmica"
+        },
+        {
+          "text": "O que é análise algorítmica"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Falar_com_humano",
+      "examples": [
+        {
+          "text": "Você pode por favor me transferir para alguém que possa me ajudar, eu mandei um e-mail para você e você não leu direito e simplesmente saiu."
+        },
+        {
+          "text": "quero falar com um humano"
+        },
+        {
+          "text": "Pode me provar que é um representante?"
+        },
+        {
+          "text": "Bem agora eu gostaria de falar com um agente sobre algumas cobranças"
+        },
+        {
+          "text": "Eu preciso falar com um representante. Como posso fazer isso?"
+        },
+        {
+          "text": "Eu quero contatar um agente/Eu quero entrar em contato com um agente"
+        },
+        {
+          "text": "Eu vou falar com um agente/ Eu vou falar com um agente de suporte."
+        },
+        {
+          "text": "Existe alguém com quem eu posso realmente falar de verdade?"
+        },
+        {
+          "text": "Isso é muito frustrante, eu quero falar com uma pessoa de verdade real."
+        },
+        {
+          "text": "Por favor me conectar a um agente humano que é fluente em inglês."
+        },
+        {
+          "text": "Por favor pode me conectar com a Vaishali K? Minha conversação foi desconectada"
+        },
+        {
+          "text": "Por favor, você pode entrar em contato comigo com um agente humano?"
+        },
+        {
+          "text": "Posso falar com um agente sobre minha conta"
+        },
+        {
+          "text": "Posso ter informações de contato para falar com um agente ao vivo."
+        },
+        {
+          "text": "Preciso contatar a um atendente"
+        },
+        {
+          "text": "Você pode me enviar um número de telefone para falar com um representante de vendas?"
+        },
+        {
+          "text": "Quero falar com alguém de outra área."
+        },
+        {
+          "text": "Você pode me conectar com uma pessoa real?"
+        },
+        {
+          "text": "Oi Fabia. Eu queria saber se você poderia me direconionar/conectar para um agente humano para que eu possa completar meu pedido?"
+        }
+      ],
+      "description": "Solicite um agente humano."
+    },
+    {
+      "intent": "o_que_sao_vetores",
+      "examples": [
+        {
+          "text": "O que são vetores em programação"
+        },
+        {
+          "text": "O que é vetor"
+        },
+        {
+          "text": "Vetores o que são"
+        },
+        {
+          "text": "O que são vetores"
+        },
+        {
+          "text": "não sei o que são vetores"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "o_que_e_tomada_de_decisao",
+      "examples": [
+        {
+          "text": "O que é if else"
+        },
+        {
+          "text": "O que são tomadas de decisão na linguagem de programação"
+        },
+        {
+          "text": "If else o que é"
+        },
+        {
+          "text": "O que é senão se"
+        },
+        {
+          "text": "O que é senão se em programação"
+        },
+        {
+          "text": "Tomadas de decisão o que é"
+        },
+        {
+          "text": "O que é a instrução if"
+        },
+        {
+          "text": "O que é a instrução se"
+        },
+        {
+          "text": "O que é tomada de decisão na programação"
+        },
+        {
+          "text": "O que é tomada de decisão"
+        },
+        {
+          "text": "O que são tomadas de decisão"
+        },
+        {
+          "text": "O que é if e else na programação"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "para_que_servem_matrizes",
+      "examples": [
+        {
+          "text": "Matrizes para que serve"
+        },
+        {
+          "text": "Para que serve matrizes"
+        },
+        {
+          "text": "nao sei pra que serve matrizes"
+        },
+        {
+          "text": "Pra que serve matrizes na programação"
+        },
+        {
+          "text": "Me diga pra que serve matrizes"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "para_que_serve_tomada_de_decisao",
+      "examples": [
+        {
+          "text": "pra que devo usar as tomadas de decisão"
+        },
+        {
+          "text": "Pra que que serve tomadas de decisão"
+        },
+        {
+          "text": "Tomadas de decisão pra que serve"
+        },
+        {
+          "text": "Tomadas de decisão por que devo utilizar"
+        },
+        {
+          "text": "Para que deve ser utilizado as tomadas de decisão"
+        },
+        {
+          "text": "Por que devo usar tomadas de decisão"
+        },
+        {
+          "text": "Pra que serve as tomadas de decisão em C sharp"
+        },
+        {
+          "text": "Pra que serve as tomadas de decisão em C mais mais"
+        },
+        {
+          "text": "Pra que serve as tomadas de decisão em C"
+        },
+        {
+          "text": "Pra que serve as tomadas de decisão em java"
+        },
+        {
+          "text": "Pra que serve as tomadas de decisão"
+        },
+        {
+          "text": "Pra de deve ser ser utilizado as tomadas de decisao"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "pra_que-serve_a_historia_do_ti",
+      "examples": [
+        {
+          "text": "pra que serve a história da informática"
+        },
+        {
+          "text": "história da computação pra que serve"
+        },
+        {
+          "text": "história da informática pra que serve"
+        },
+        {
+          "text": "pra que serve a história do ti"
+        },
+        {
+          "text": "história do ti pra que serve"
+        },
+        {
+          "text": "pra que serve a história da tecnologia da informação"
+        },
+        {
+          "text": "pra que serve a historia da computação"
+        },
+        {
+          "text": "história da tecnologia da informação pra que serve"
+        },
+        {
+          "text": "pra que serve a história da computação"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Humano_ou_Bot",
+      "examples": [
+        {
+          "text": "Como você pode provar que é humano?"
+        },
+        {
+          "text": "Você é uma pessoa real ou um robô?"
+        },
+        {
+          "text": "Com quem estou falando?"
+        },
+        {
+          "text": "Diga-me, você é humano ou não?"
+        },
+        {
+          "text": "Estou conversando com uma pessoa ou com uma IA?"
+        },
+        {
+          "text": "Estou conversando com um humano?"
+        },
+        {
+          "text": "Estou conversando com um robô?"
+        },
+        {
+          "text": "Eu estou conversando com o Watson?"
+        },
+        {
+          "text": "Isso é um computador?"
+        },
+        {
+          "text": "Quem é você?"
+        },
+        {
+          "text": "Quem é você, realmente?"
+        },
+        {
+          "text": "Você é humano?"
+        },
+        {
+          "text": "Você é real?"
+        },
+        {
+          "text": "Você é real, pelo menos?"
+        },
+        {
+          "text": "Você é um homem ou uma mulher?"
+        },
+        {
+          "text": "Você é um humano ou um robô?"
+        },
+        {
+          "text": "vc é humana?"
+        }
+      ],
+      "description": "Pergunte se está falando com um humano ou um robô."
+    },
+    {
+      "intent": "o_que_e_pesquisa_binaria",
+      "examples": [
+        {
+          "text": "O que é uma busca binária em lógica de programação"
+        },
+        {
+          "text": "Não sei o eu é busca binária"
+        },
+        {
+          "text": "Me diz o que é pesquisa binária"
+        },
+        {
+          "text": "Me diz o que é busca binária"
+        },
+        {
+          "text": "Pesquisa binária o que é"
+        },
+        {
+          "text": "O que é pesquisa binária"
+        },
+        {
+          "text": "O que é uma pesquisa binária em lógica de programação"
+        },
+        {
+          "text": "O que é uma busca binária"
+        },
+        {
+          "text": "Busca binária o que é"
+        },
+        {
+          "text": "Não sei o que é pesquisa binária"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "o_que_sao_algoritmos",
+      "examples": [
+        {
+          "text": "o que sao algoritmos?"
+        },
+        {
+          "text": "Algoritmo"
+        },
+        {
+          "text": "Me explica algoritmos"
+        },
+        {
+          "text": "o que é algoritmo?"
+        },
+        {
+          "text": "Algoritmos, o que são?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "o_que_e_linguagem_de_programacao",
+      "examples": [
+        {
+          "text": "O que é linguagem de programação de computadores"
+        },
+        {
+          "text": "Linguagem de programação o que é"
+        },
+        {
+          "text": "O que é linguagem de programação"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "pra_que_serve_logica_de_programacao",
+      "examples": [
+        {
+          "text": "pra que serve lógica de programação"
+        },
+        {
+          "text": "pra que serve a logica de programação em computadores"
+        },
+        {
+          "text": "não sei pra que serve logica de programação"
+        },
+        {
+          "text": "me ensine logica de programação"
+        },
+        {
+          "text": "lógica de programação pra que serve"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "para_que_serve_analise_algoritmica",
+      "examples": [
+        {
+          "text": "Como funciona a análise algorítmica"
+        },
+        {
+          "text": "Proposito da Análise algorítmica"
+        },
+        {
+          "text": "Análise algorítmica qual a utilidade"
+        },
+        {
+          "text": "Qual a utilidade da Análise algorítmica"
+        },
+        {
+          "text": "Análise algorítmica para que serve"
+        },
+        {
+          "text": "Para que serve análise algorítmica"
+        },
+        {
+          "text": "Não sei para que serve Análise algorítmica"
+        },
+        {
+          "text": "Por que devo usar Análise algorítmica"
+        },
+        {
+          "text": "Para que utilizar análise algorítmica"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "pra_que_serve_fluxograma",
+      "examples": [
+        {
+          "text": "Não sei o que é um fluxograma"
+        },
+        {
+          "text": "pra que serve fluxograma na informática"
+        },
+        {
+          "text": "pra que serve fluxograma na computação"
+        },
+        {
+          "text": "fluxograma pra que serve"
+        },
+        {
+          "text": "pra que serve fluxograma"
+        },
+        {
+          "text": "Me ensine fluxograma"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "o_que_e_princípio_de_programacao",
+      "examples": [
+        {
+          "text": "Princípios de programação o que são"
+        },
+        {
+          "text": "O que são princípios da programação"
+        },
+        {
+          "text": "O que é princípio de programação"
+        },
+        {
+          "text": "Princípio da programação o que é"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "como_usar_tomadas_de_decisao",
+      "examples": [
+        {
+          "text": "Quais os comandos para tomadas de decisão em Java"
+        },
+        {
+          "text": "Tomadas de decisão como devo utilizar"
+        },
+        {
+          "text": "Como faço para usar tomadas de decisão"
+        },
+        {
+          "text": "Como uso as tomadas de decisão"
+        },
+        {
+          "text": "Como faço para tomar decisões em Java"
+        },
+        {
+          "text": "Como faço para tomar decisões em programação"
+        },
+        {
+          "text": "Tomadas de decisão como usar"
+        },
+        {
+          "text": "Quais comandos devo usar em tomadas de decisão"
+        },
+        {
+          "text": "O que devo fazer para tomar de decisões"
+        },
+        {
+          "text": "Como faço para tomar decisões"
+        },
+        {
+          "text": "Como utilizar as tomadas de decisão"
+        },
+        {
+          "text": "Como tomar decisões em programação"
+        },
+        {
+          "text": "Como tomar decisões"
+        },
+        {
+          "text": "Como usar o senão se"
+        },
+        {
+          "text": "Quais os comandos para tomadas de decisão em C sharp"
+        },
+        {
+          "text": "Quais os comandos para tomadas de decisão em C mais mais"
+        },
+        {
+          "text": "Quais os comandos para tomadas de decisão em C"
+        },
+        {
+          "text": "Quais os comandos para tomadas de decisão"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Greetings",
+      "examples": [
+        {
+          "text": "Boa tarde , você está ai?"
+        },
+        {
+          "text": "Bom dia, como você está?"
+        },
+        {
+          "text": "Olá, pode me ajudar?"
+        },
+        {
+          "text": "Como estão as coisas aí?"
+        },
+        {
+          "text": "Ei, você está aí?"
+        },
+        {
+          "text": "Eu tenho algumas perguntas"
+        },
+        {
+          "text": "Estou com duvidas"
+        },
+        {
+          "text": "Boa noite"
+        },
+        {
+          "text": "eai"
+        },
+        {
+          "text": "Beleza?"
+        },
+        {
+          "text": "eae"
+        },
+        {
+          "text": "ta ai?"
+        },
+        {
+          "text": "oi"
+        },
+        {
+          "text": "td bem ?"
+        },
+        {
+          "text": "oi td bem?"
+        },
+        {
+          "text": "como vai?"
+        },
+        {
+          "text": "como está?"
+        },
+        {
+          "text": "ola td bom?"
+        },
+        {
+          "text": "bom?"
+        },
+        {
+          "text": "oii"
+        },
+        {
+          "text": "oiiii"
+        },
+        {
+          "text": "td e com vc?"
+        },
+        {
+          "text": "suave"
+        },
+        {
+          "text": "Tudo E vc?"
+        },
+        {
+          "text": "tudo bem e voce?"
+        },
+        {
+          "text": "estou bem e você?"
+        },
+        {
+          "text": "nao"
+        },
+        {
+          "text": "tranquilo"
+        },
+        {
+          "text": "Boa tarde"
+        }
+      ],
+      "description": "Cumprimente o robô."
+    },
+    {
+      "intent": "Elogio",
+      "examples": [
+        {
+          "text": "É muito louco o que um robô pode fazer."
+        },
+        {
+          "text": "Genial! Isso é exatamente o que eu pensei."
+        },
+        {
+          "text": "Muito bom, obrigado."
+        },
+        {
+          "text": "Espero trabalhar com você novamente."
+        },
+        {
+          "text": "Estou impressionado com você."
+        },
+        {
+          "text": "Estou pegando a manha disso."
+        },
+        {
+          "text": "Eu gostei do que você fez aí."
+        },
+        {
+          "text": "Gostei muito do seu trabalho."
+        },
+        {
+          "text": "Incrível como você é bom!"
+        },
+        {
+          "text": "Isso é divertido."
+        },
+        {
+          "text": "Isso é muito legal."
+        },
+        {
+          "text": "Muito inteligente."
+        },
+        {
+          "text": "Muito obrigado."
+        },
+        {
+          "text": "Ótimo!"
+        },
+        {
+          "text": "Você é adorável."
+        },
+        {
+          "text": "Você é demais."
+        },
+        {
+          "text": "Você detonou."
+        },
+        {
+          "text": "Você é inteligente."
+        },
+        {
+          "text": "Você é legal."
+        },
+        {
+          "text": "Você me deu exatamente o que eu precisava."
+        },
+        {
+          "text": "Você é o cara."
+        },
+        {
+          "text": "linda"
+        },
+        {
+          "text": "boa"
+        }
+      ],
+      "description": "Exprima sentimento positivo ou gratidão."
+    },
+    {
+      "intent": "o_que_e_pesquisa_sequencial_direta",
+      "examples": [
+        {
+          "text": "Me diz o que é busca sequencial direta"
+        },
+        {
+          "text": "Não sei o que é busca sequencial direta"
+        },
+        {
+          "text": "Me diz o que é pesquisa sequencial direta"
+        },
+        {
+          "text": "Não sei o que é pesquisa sequencial direta"
+        },
+        {
+          "text": "O que é busca sequencial direta"
+        },
+        {
+          "text": "Pesquisa sequencial direta o que é"
+        },
+        {
+          "text": "O que é pesquisa sequencial direta em vetores"
+        },
+        {
+          "text": "O que é pesquisa sequencial direta"
+        },
+        {
+          "text": "O que é busca sequencial direta na lógica de programação"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "quantas_tomadas_decisao_existem",
+      "examples": [
+        {
+          "text": "Quantos tipos de tomadas de decisão existem"
+        },
+        {
+          "text": "Tomadas de decisão quantas existem"
+        },
+        {
+          "text": "Existem quantas tomadas de decisão"
+        },
+        {
+          "text": "Quais os tipos de tomadas de decisão"
+        },
+        {
+          "text": "Quantas tomadas de decisão existem"
+        },
+        {
+          "text": "Quais os tipos de tomadas de decisão existentes"
+        },
+        {
+          "text": "Quais são os tipos existentes para tomadas de decisão"
+        },
+        {
+          "text": "Tipos existentes de tomadas de decisão"
+        },
+        {
+          "text": "Tomadas de decisão quais os tipos existentes"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "como_usa_estrutura_de_repeticao",
+      "examples": [
+        {
+          "text": "Preciso de ajuda com estrutura de repetição"
+        },
+        {
+          "text": "Quero um tutorial de estrutura de repetição"
+        },
+        {
+          "text": "Como eu uso estrutura de repetição"
+        },
+        {
+          "text": "Não sei usar estrutura de repetição"
+        },
+        {
+          "text": "Não entendi como usa estrutura de repetição"
+        },
+        {
+          "text": "Dicas sobre estrutura de repetição"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Agradecimento",
+      "examples": [
+        {
+          "text": "Ok, obrigado"
+        },
+        {
+          "text": "entendi ja, obrigdao"
+        },
+        {
+          "text": "de nada"
+        },
+        {
+          "text": "thanks"
+        },
+        {
+          "text": "Obrigado pela ajuda"
+        },
+        {
+          "text": "É nois!"
+        },
+        {
+          "text": "vlw"
+        },
+        {
+          "text": "Tamo junto!"
+        },
+        {
+          "text": "Valeu!"
+        },
+        {
+          "text": "Estou muito agradecido"
+        },
+        {
+          "text": "Muito obrigado"
+        },
+        {
+          "text": "Obrigado"
+        }
+      ],
+      "description": "Agradecer"
+    },
+    {
+      "intent": "pra_que_serve_variavel",
+      "examples": [
+        {
+          "text": "pra que serve variável"
+        },
+        {
+          "text": "variável na programação pra que serve"
+        },
+        {
+          "text": "variável pra que serve"
+        },
+        {
+          "text": "pra que serve variável na programação"
+        },
+        {
+          "text": "pra que serve variável na informática"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "para_que_servem_vetores",
+      "examples": [
+        {
+          "text": "Qual a utilidade dos vetores"
+        },
+        {
+          "text": "Não sei pra que serve vetores"
+        },
+        {
+          "text": "Para que serve vetores"
+        },
+        {
+          "text": "Vetores para que serve"
+        },
+        {
+          "text": "Vetores qual a utilidade"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "historia_da_ti",
+      "examples": [
+        {
+          "text": "O que é a história da tecnologia da informação"
+        },
+        {
+          "text": "O que é a história da computação"
+        },
+        {
+          "text": "O que é a história da informática"
+        },
+        {
+          "text": "mas como surgiu um algoritmo?"
+        },
+        {
+          "text": "História da informática o que é"
+        },
+        {
+          "text": "Qual a história da ti"
+        },
+        {
+          "text": "O que é história da computação"
+        },
+        {
+          "text": "História da computação o que é"
+        },
+        {
+          "text": "O que é história da ti"
+        },
+        {
+          "text": "História da ti o que é"
+        },
+        {
+          "text": "O que é história da informática"
+        },
+        {
+          "text": "Qual a história da informática"
+        },
+        {
+          "text": "O que é a história da ti"
+        },
+        {
+          "text": "Qual é a história da tecnologia da informação"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "quantas_estruturas_de_repeticao_existem",
+      "examples": [
+        {
+          "text": "qual o numero de estrutura de repetição"
+        },
+        {
+          "text": "existem quantas estruturas de repetição"
+        },
+        {
+          "text": "quero a lista de estrutura de repetição existente"
+        },
+        {
+          "text": "qual a quantidade de estrutura de repetição"
+        },
+        {
+          "text": "preciso saber quantas estrutura de repetição existem"
+        },
+        {
+          "text": "quantas estrutura de repetição existem"
+        },
+        {
+          "text": "não sei quantas estrutura de repetição existem"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "como_utilizar_analise_algoritmica",
+      "examples": [
+        {
+          "text": "Utilização de análise algorítmica"
+        },
+        {
+          "text": "Como utilizo Análise algorítmica"
+        },
+        {
+          "text": "Não sei utilizar análise algorítmica"
+        },
+        {
+          "text": "Análise algorítmica como utilizar"
+        },
+        {
+          "text": "Formas de utilizar análise algorítmica"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "o_que_sao_vetores_e_matrizes",
+      "examples": [
+        {
+          "text": "Me fale o que são vetores e matrizes"
+        },
+        {
+          "text": "Não sei o que são vetores e matrizes"
+        },
+        {
+          "text": "Vetores e matrizes o que são"
+        },
+        {
+          "text": "O que são vetores e matrizes em programação"
+        },
+        {
+          "text": "O que são matrizes e vetores"
+        },
+        {
+          "text": "O que são vetores e matrizes"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "como_usar_estrutura_de_repeticao",
+      "examples": [
+        {
+          "text": "Como eu uso estrutura de repetição"
+        },
+        {
+          "text": "Não entendo como usa estrutura de repetição"
+        },
+        {
+          "text": "Não entendi como usa estrutura de repetição"
+        },
+        {
+          "text": "Preciso de ajuda com estrutura de repetição"
+        },
+        {
+          "text": "Dicas sobre estrutura de repetição"
+        },
+        {
+          "text": "Quero um tutorial de estrutura de repetição"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "o_que_e_estrutura_de_repeticao",
+      "examples": [
+        {
+          "text": "me ajuda com algoritmo  estrutura de repetição"
+        },
+        {
+          "text": "como entender estrutura de repetição"
+        },
+        {
+          "text": "o que é repetição"
+        },
+        {
+          "text": "o que é laço de repetição"
+        },
+        {
+          "text": "o que é estrutura de repetição"
+        },
+        {
+          "text": "me ajuda com estrutura de repetição"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "o_que_e_principio_de_programacao",
+      "examples": [
+        {
+          "text": "Princípios de programação o que são"
+        },
+        {
+          "text": "O que é princípio de programação"
+        },
+        {
+          "text": "Me fale sobre principios da programacao"
+        },
+        {
+          "text": "Princípio da programação o que é"
+        },
+        {
+          "text": "O que são princípios da programação"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "o_que_e_logica_de_programacao",
+      "examples": [
+        {
+          "text": "Não se logica de programação"
+        },
+        {
+          "text": "Não sei logica de programação"
+        },
+        {
+          "text": "O que é lógica de programação"
+        },
+        {
+          "text": "Lógica de programação o que é"
+        },
+        {
+          "text": "O que é lógica em programação"
+        },
+        {
+          "text": "O que é lógica de programação em computadores"
+        },
+        {
+          "text": "Me ensine lógica de programação"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "quantas_tomadas_de_decisao_existem",
+      "examples": [
+        {
+          "text": "Quantas tomadas de decisão existem"
+        },
+        {
+          "text": "Quais os tipos de tomadas de decisão"
+        },
+        {
+          "text": "Existem quantas tomadas de decisão"
+        },
+        {
+          "text": "Tomadas de decisão quantas existem"
+        },
+        {
+          "text": "Quantos tipos de tomadas de decisão existem"
+        },
+        {
+          "text": "Tipos existentes de tomadas de decisão"
+        },
+        {
+          "text": "Quais os tipos de tomadas de decisão existentes"
+        },
+        {
+          "text": "Tomadas de decisão quais os tipos existentes"
+        },
+        {
+          "text": "Quais são os tipos existentes para tomadas de decisão"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Insultos",
+      "examples": [
+        {
+          "text": "Você está me entediando."
+        },
+        {
+          "text": "pqp"
+        },
+        {
+          "text": "toma no cu"
+        },
+        {
+          "text": "vai se fuder"
+        },
+        {
+          "text": "filho da puta"
+        },
+        {
+          "text": "otario"
+        },
+        {
+          "text": "cabaço"
+        },
+        {
+          "text": "burra"
+        },
+        {
+          "text": "troxa"
+        },
+        {
+          "text": "vadia"
+        },
+        {
+          "text": "idiota"
+        },
+        {
+          "text": "viadinho"
+        },
+        {
+          "text": "piranha"
+        },
+        {
+          "text": "chupa meu pau"
+        },
+        {
+          "text": "fdp"
+        },
+        {
+          "text": "Você é burro."
+        },
+        {
+          "text": "Você é chato?"
+        },
+        {
+          "text": "Vá se foder!"
+        },
+        {
+          "text": "Vá para o inferno!"
+        },
+        {
+          "text": "Vá para a puta que pariu!"
+        },
+        {
+          "text": "Você é ruim mesmo?"
+        },
+        {
+          "text": "Você não vale nada."
+        },
+        {
+          "text": "Você está fora de si?"
+        },
+        {
+          "text": "Você é espertinho?"
+        },
+        {
+          "text": "Uma experiência horrível, com certeza!"
+        },
+        {
+          "text": "vsf"
+        },
+        {
+          "text": "Todo mundo te odeia."
+        },
+        {
+          "text": "Tchau, vagabunda."
+        },
+        {
+          "text": "Sua mãe."
+        },
+        {
+          "text": "Seja bom uma vez na vida."
+        },
+        {
+          "text": "Porra, como posso falar com uma pessoa real?"
+        },
+        {
+          "text": "Por que você é retardado?"
+        },
+        {
+          "text": "Você é uma piada?"
+        }
+      ],
+      "description": "Expresse feedback desfavorável."
+    },
+    {
+      "intent": "como_usar_matrizes",
+      "examples": [
+        {
+          "text": "como uso matrizes"
+        },
+        {
+          "text": "Não sei utilizar matrizes"
+        },
+        {
+          "text": "como utilizo matrizes"
+        },
+        {
+          "text": "como usar matrizes"
+        },
+        {
+          "text": "matrizes como usar"
+        },
+        {
+          "text": "como posso utilizar matrizes"
+        },
+        {
+          "text": "como eu utilizo as matrizes"
+        },
+        {
+          "text": "me diga como utilizar matrizes"
+        },
+        {
+          "text": "me ensine a usar matrizes"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "o_que_e_estrutura_de_repetição",
+      "examples": [
+        {
+          "text": "o que é repetição"
+        },
+        {
+          "text": "o que é estrutura de repetição"
+        },
+        {
+          "text": "o que é laço de repetição"
+        },
+        {
+          "text": "me ajuda com algoritmo  estrutura de repetição"
+        },
+        {
+          "text": "me ajuda com estrutura de repetição"
+        },
+        {
+          "text": "como entender estrutura de repetição"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "o_que_sao_matrizes",
+      "examples": [
+        {
+          "text": "O que é matriz"
+        },
+        {
+          "text": "Não sei o que são matrizes"
+        },
+        {
+          "text": "Me diga o que sabe sobre matrizes"
+        },
+        {
+          "text": "Me fale sobre matrizes"
+        },
+        {
+          "text": "O que são matrizes"
+        },
+        {
+          "text": "Matrizes o que são"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "para_que_serve_estrutura_de_repeticao",
+      "examples": [
+        {
+          "text": "sobre estrutura de repetição por que eu usaria"
+        },
+        {
+          "text": "por que que eu usuária uma estrutura de repetição"
+        },
+        {
+          "text": "qual a função de estrutura de repetição"
+        },
+        {
+          "text": "para que serve a estrutura de repetição"
+        },
+        {
+          "text": "qual a importância de estrutura de repetição"
+        },
+        {
+          "text": "qual a utilidade de estrutura de repetição"
+        },
+        {
+          "text": "sobre estrutura de repetição qual sua função"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Nivelamento",
+      "examples": [
+        {
+          "text": "pra que eu vou fazer isso?"
+        },
+        {
+          "text": "quanto custam?"
+        },
+        {
+          "text": "quanto tempo duram?"
+        },
+        {
+          "text": "Quando começam?"
+        },
+        {
+          "text": "Pra que servem esses cursos?"
+        },
+        {
+          "text": "Quantos cursos de nivelamento existem?"
+        },
+        {
+          "text": "Pra que serve o curso de nivelamento?"
+        },
+        {
+          "text": "O que são os cursos de nivelamento?"
+        },
+        {
+          "text": "Por que eu deverias fazer esses cursos?"
+        }
+      ],
+      "description": "Duvidas sobre os cursos"
+    },
+    {
+      "intent": "pra_que_serve_pesquisa_sequencial_direta",
+      "examples": [
+        {
+          "text": "pesquisa sequencial direta pra que serve"
+        },
+        {
+          "text": "pra que serve pesquisa sequencial direta"
+        },
+        {
+          "text": "busca sequencial direta pra que serve"
+        },
+        {
+          "text": "pra que serve busca sequencial direta"
+        },
+        {
+          "text": "pra que serve busca sequencial direta em lógica de programação"
+        },
+        {
+          "text": "pra que serve pesquisa sequencial direta em lógica de programação"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "o_que_e_fluxograma",
+      "examples": [
+        {
+          "text": "O que é fluxograma em computação"
+        },
+        {
+          "text": "Fluxograma na programação o que é"
+        },
+        {
+          "text": "Fluxograma em informática o que é"
+        },
+        {
+          "text": "Fluxograma o que é"
+        },
+        {
+          "text": "O que é um fluxograma na programação"
+        },
+        {
+          "text": "O que é fluxograma"
+        },
+        {
+          "text": "O que é fluxograma em informática"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "como_usar_vetores",
+      "examples": [
+        {
+          "text": "como utilizo vetores"
+        },
+        {
+          "text": "Não sei utilizar vetores"
+        },
+        {
+          "text": "vetores como utilizar"
+        },
+        {
+          "text": "me diga como utilizar vetores"
+        },
+        {
+          "text": "como uso vetores"
+        },
+        {
+          "text": "vetores como usar"
+        },
+        {
+          "text": "como devo utilizar vetores"
+        },
+        {
+          "text": "como posso utilizar vetores"
+        },
+        {
+          "text": "como eu utilizo os vetores"
+        },
+        {
+          "text": "como eu posso utilizar os vetores"
+        },
+        {
+          "text": "como utilizar vetores"
+        },
+        {
+          "text": "como posso usar vetores"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Sobre_Fabia",
+      "examples": [
+        {
+          "text": "Eu preciso da informação sobre o preço do Watson."
+        },
+        {
+          "text": "quem é voce?"
+        },
+        {
+          "text": "o que vc faz?"
+        },
+        {
+          "text": "Eu estou tendo alguns problemas e gostaria de alguma informação sobre como obter alguma ajuda"
+        },
+        {
+          "text": "Eu gostaria de saber como você pode me ajudar"
+        },
+        {
+          "text": "Eu preciso de ajuda, alguém pode me ajudar?"
+        },
+        {
+          "text": "O que você mais gosta de fazer?"
+        },
+        {
+          "text": "Quero o documento de requisitos do sistema para esse agente."
+        },
+        {
+          "text": "Você sabe quem você é?"
+        },
+        {
+          "text": "Você fala outra Lingua?"
+        },
+        {
+          "text": "Você fornece ajuda geral? Eu não sei o que eu posso te perguntar"
+        },
+        {
+          "text": "pode listar quais áreas você pode fornecer ajuda?"
+        },
+        {
+          "text": "Qual ajuda você pode fornecer?"
+        },
+        {
+          "text": "O que você pode fazer para me ajudar?"
+        },
+        {
+          "text": "como vc pode me ajudar?"
+        },
+        {
+          "text": "Quem te criou"
+        },
+        {
+          "text": "o que é vc?"
+        },
+        {
+          "text": "oq é vc"
+        },
+        {
+          "text": "oq é vc?"
+        },
+        {
+          "text": "Você tem um nome?"
+        },
+        {
+          "text": "Como você se descreve?"
+        },
+        {
+          "text": "Estou procurando uma solução para melhorar o meu engajamento com o cliente usando este agente virtual."
+        },
+        {
+          "text": "em que vc pode me ajudar?"
+        },
+        {
+          "text": "Há quanto tempo você tem desempenhado essa função?"
+        },
+        {
+          "text": "Quais são os seus apelidos?"
+        },
+        {
+          "text": "Qual a sua idade?"
+        },
+        {
+          "text": "Quero configurar saudações aqui."
+        },
+        {
+          "text": "Quero entender como você trabalha."
+        },
+        {
+          "text": "Me diga sobre você."
+        },
+        {
+          "text": "como você pode me ajudar?"
+        }
+      ],
+      "description": "Assuntos Gerais do Chatbot"
+    },
+    {
+      "intent": "pra_que_serve_a_historia_do_ti",
+      "examples": [
+        {
+          "text": "história da informática pra que serve"
+        },
+        {
+          "text": "pra que serve a história da informática"
+        },
+        {
+          "text": "pra que serve a historia da computação"
+        },
+        {
+          "text": "história da computação pra que serve"
+        },
+        {
+          "text": "pra que serve a história da computação"
+        },
+        {
+          "text": "história da tecnologia da informação pra que serve"
+        },
+        {
+          "text": "pra que serve a história da tecnologia da informação"
+        },
+        {
+          "text": "história do ti pra que serve"
+        },
+        {
+          "text": "pra que serve a história do ti"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Duvidas",
+      "examples": [
+        {
+          "text": "estou com duvidas"
+        },
+        {
+          "text": "pode explicar melhor?"
+        },
+        {
+          "text": "pode explicar de novo?"
+        },
+        {
+          "text": "continuo sem entender"
+        },
+        {
+          "text": "pq?"
+        },
+        {
+          "text": "por que?"
+        },
+        {
+          "text": "me ajuda"
+        },
+        {
+          "text": "vc pode me ajudar?"
+        },
+        {
+          "text": "Opa"
+        },
+        {
+          "text": "como assim?"
+        },
+        {
+          "text": "não entendi"
+        }
+      ],
+      "description": "Duvidas gerais/Conteudo"
+    },
+    {
+      "intent": "Endings",
+      "examples": [
+        {
+          "text": "Vou sair agora. Tchau"
+        },
+        {
+          "text": "Ok, isso é tudo que eu preciso para agora."
+        },
+        {
+          "text": "pare esta sessão agora..Tchau"
+        },
+        {
+          "text": "Quero encerrar a conversa, obrigado."
+        },
+        {
+          "text": "Te desejo o melhor de sorte..Tchau"
+        },
+        {
+          "text": "Vamos dar uma pausa e tentar novamente mais tarde..Tchau"
+        },
+        {
+          "text": "Obrigado por responder todas as minhas perguntas. Tchau"
+        },
+        {
+          "text": "Obrigado pela sua ajuda, mas ainda estou confuso…tchau"
+        },
+        {
+          "text": "Obrigada, tchau!"
+        },
+        {
+          "text": "Muito obrigado pelo seu tempo. Me desculpe, mas eu tenho que ir. Até logo!"
+        },
+        {
+          "text": "Me tire daqui."
+        },
+        {
+          "text": "Falo contigo depois. Tchau"
+        },
+        {
+          "text": "Eu preciso correr porque acabei de notar que estou atrasado para o meu próximo compromisso"
+        },
+        {
+          "text": "Eu estou indo agora. Tenha um bom dia. Tchau"
+        },
+        {
+          "text": "Estou indo embora."
+        },
+        {
+          "text": "Estou cansado de digitar agora. Obrigado e adeus"
+        },
+        {
+          "text": "Desculpe ter ocupado tanto do seu tempo. Eu sei que estamos os dois ocupados e acho que tenho que dizer tchau por ora.."
+        },
+        {
+          "text": "Você foi de pouca ajuda, por isso não quero falar com você mais, tchau"
+        },
+        {
+          "text": "forte abraço"
+        },
+        {
+          "text": "Com licença, tenho que ir agora"
+        },
+        {
+          "text": "Vejo você mais tarde."
+        },
+        {
+          "text": "Volto mais tarde."
+        },
+        {
+          "text": "Tudo bem, eu tenho tudo o que eu precisava"
+        },
+        {
+          "text": "Até Logo"
+        },
+        {
+          "text": "Entendi"
+        }
+      ],
+      "description": "Termine a conversa."
+    },
+    {
+      "intent": "para_que_servem_vetores_e_matrizes",
+      "examples": [
+        {
+          "text": "Vetores e matrizes para que servem"
+        },
+        {
+          "text": "Me diga para que serve vetores e matrizes"
+        },
+        {
+          "text": "Matrizes e vetores pra que serve"
+        },
+        {
+          "text": "Para que servem vetores e matrizes"
+        },
+        {
+          "text": "Para que servem matrizes e vetores"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Sobre_FIAP",
+      "examples": [
+        {
+          "text": "quanto custa essa faculdade?"
+        },
+        {
+          "text": "onde fica essa facul?"
+        },
+        {
+          "text": "o que é a FIAP?"
+        },
+        {
+          "text": "FIAP?"
+        },
+        {
+          "text": "qual faculdade é essa?"
+        }
+      ],
+      "description": "Tira dúvidas sobre a FIAP em geral"
+    },
+    {
+      "intent": "pra_que_serve_principios_da_programacao",
+      "examples": [
+        {
+          "text": "Para que serve os princípios da programação"
+        },
+        {
+          "text": "Princípios da programação pra que serve"
+        },
+        {
+          "text": "Pra que serve princípios da programação"
+        },
+        {
+          "text": "Não sei os princípios da programação"
+        },
+        {
+          "text": "Me ensine os princípios da programação"
+        },
+        {
+          "text": "Princípios da programação servem pra que"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "pra_que_serve_linguagem_de_programacao",
+      "examples": [
+        {
+          "text": "não sei pra que serve linguagem de programação"
+        },
+        {
+          "text": "linguagem de programação pra que serve"
+        },
+        {
+          "text": "pra que serve uma linguagem de programação"
+        },
+        {
+          "text": "me explica pra que ser linguagem de programação"
+        },
+        {
+          "text": "pra que serve linguagem de programação de computadores"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "o_que_e_pesquisa_sequencial_com_sentinela",
+      "examples": [
+        {
+          "text": "me diz o que é pesquisa sequencial com sentinela"
+        },
+        {
+          "text": "pesquisa sequencial com sentinela o que é"
+        },
+        {
+          "text": "o que é busca sequencial com sentinela"
+        },
+        {
+          "text": "o que é busca sequencial com sentinela em lógica de programação"
+        },
+        {
+          "text": "busca sequencial com sentinela o que é"
+        },
+        {
+          "text": "não sei o que é pesquisa sequencial com sentinela"
+        },
+        {
+          "text": "o que é pesquisa sequencial com sentinela"
+        },
+        {
+          "text": "não sei o que é busca sequencial com sentinela"
+        },
+        {
+          "text": "me diz o que é busca sequencial com sentinela"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Piada",
+      "examples": [
+        {
+          "text": "Você tem senso de humor?"
+        },
+        {
+          "text": "Você tem quaisquer jogos?"
+        },
+        {
+          "text": "Você sabe piadas?"
+        },
+        {
+          "text": "Você pode me contar uma piada?"
+        },
+        {
+          "text": "Você pode cantar para mim?"
+        },
+        {
+          "text": "Você me entediou."
+        },
+        {
+          "text": "Você gosta de contar piadas?"
+        },
+        {
+          "text": "Vamos nos divertir!"
+        },
+        {
+          "text": "Surpreenda-me com algo hilariante."
+        },
+        {
+          "text": "Qual a sua piada favorita?"
+        },
+        {
+          "text": "Me conte mais uma."
+        },
+        {
+          "text": "Eu não sou tedioso, você é."
+        },
+        {
+          "text": "Estou entediado."
+        },
+        {
+          "text": "Estou entediado. Entretenha-me!"
+        },
+        {
+          "text": "Está se divertindo?"
+        },
+        {
+          "text": "Fala uma piada ai"
+        },
+        {
+          "text": "Fale uma piada"
+        },
+        {
+          "text": "Fala outra piada"
+        }
+      ],
+      "description": "Peça uma piada."
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "values": []
+    },
+    {
+      "entity": "cursos",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "algoritmo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "matematica",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "cursos",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "portugues",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "curso",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "nivelamento",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "nivelamento",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "materias",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "ajuda",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "ajudar",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ajuda",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "quantidade",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "existem",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "quantos",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "quais",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "tempo",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "tempo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "dura",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "quando",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": []
+    },
+    {
+      "entity": "sys-percentage",
+      "values": []
+    },
+    {
+      "entity": "giria",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "vei",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "tia",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "eai",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "falae",
+          "synonyms": [
+            "falai",
+            "fala ai"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "salve",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "mina",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "vlw",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "blz?",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "tiltado",
+          "synonyms": [
+            "nervosinha?",
+            "nervosinho"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "pode pá",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "mitou",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "mano",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "suave",
+          "synonyms": [
+            "na nave?"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "coe",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "pergunta",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "tranquilo?",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "tudo bom?",
+          "synonyms": [
+            "td bom?",
+            "tdb?"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "tudo bem?",
+          "synonyms": [
+            "td bem?"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "e voce?",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ta boa?",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "beleza?",
+          "synonyms": [
+            "blz?"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "formal",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "com licença",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "por favor",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "por gentileza",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "obséquio",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": []
+    },
+    {
+      "entity": "sabe",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "faz",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "sabe",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "saber",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "resposta",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "to bem",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "suave",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "estou bem",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "entendi",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "não",
+          "synonyms": [
+            "nao"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "não entendi",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "bem",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "tudo bem",
+          "synonyms": [
+            "Tudo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "tudo sim",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Deixo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "tudo bem.",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "sim",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "obrigado",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "tranquilo",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "funcionalidade",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "proposito",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "objetivo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "faz",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "pode",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "funcao",
+          "synonyms": [
+            "função"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "serve",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "criacao",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "criada",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "criou",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "feita",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "language": "pt-br",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2018-09-20"
+    }
+  },
+  "skill_id": "7985b173-2c19-431e-9415-b27638b71c1e",
+  "description": "",
+  "dialog_nodes": [
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1556134739598",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1556134739598",
+      "previous_sibling": "handler_5_1556134739598"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_4_1556134739598",
+      "event_name": "input",
+      "dialog_node": "handler_5_1556134739598"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Através das estruturas de faça, enquanto, para e o para cada."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_14_1566561722837",
+      "conditions": "#como_usa_estrutura_de_repeticao",
+      "dialog_node": "node_4_1566561776251",
+      "previous_sibling": "node_16_1566561722839"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Existem 4 estruturas de repetição para praticamente todas as linguagens de programação, seja C ou java script."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_14_1566561722837",
+      "conditions": "#quantas_estruturas_de_repeticao_existem",
+      "dialog_node": "node_3_1566561800836",
+      "previous_sibling": "node_4_1566561776251"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para repetir ações semelhantes que são executadas para todos os elementos de uma lista de dados, ou simplesmente para repetir um mesmo processamento até que a condição seja satisfeita."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_14_1566561722837",
+      "conditions": "#para_que_serve_estrutura_de_repeticao",
+      "dialog_node": "node_16_1566561722839",
+      "previous_sibling": "node_15_1566561722839"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "É uma estrutura que permite executar mais de uma vez o mesmo comando ou conjunto de comandos, de acordo com uma condição ou com um contador."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_14_1566561722837",
+      "conditions": "#o_que_e_estrutura_de_repeticao",
+      "dialog_node": "node_15_1566561722839"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O que você não entendeu direito?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1556313091284",
+      "metadata": {},
+      "conditions": "#Duvidas && @resposta:(não entendi)",
+      "dialog_node": "node_2_1556713065013",
+      "previous_sibling": "node_2_1556313125259"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você está com dúvida em que especificamente?"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_1_1556313091284",
+      "metadata": {},
+      "conditions": "#Duvidas",
+      "dialog_node": "node_3_1556313204997",
+      "previous_sibling": "node_2_1556713065013"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Claro! Em que posso te ajudar?"
+              },
+              {
+                "text": "Mas é claro! Como posso te ajudar?"
+              },
+              {
+                "text": "Com certeza! O que você precisa?"
+              },
+              {
+                "text": "Vou me esforçar, vamos lá! Qual a sua dúvida?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1556313091284",
+      "metadata": {},
+      "conditions": "#Duvidas && @funcionalidade:pode",
+      "dialog_node": "node_2_1556313125259"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sou a Fabia Chatbot.\nO que você quer saber sobre mim?"
+              },
+              {
+                "text": "Sou a Fabia Chatbot.\nEm que posso te ajudar?"
+              },
+              {
+                "text": "Sou a Inteligência Artificial da Fiap.\nEm que posso ajudar você?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1556193892915",
+      "metadata": {},
+      "conditions": "#Sobre_Fabia",
+      "dialog_node": "node_2_1556193923148",
+      "previous_sibling": "response_1_1566564919701"
+    },
+    {
+      "type": "response_condition",
+      "title": "response_1_1566564919701",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Fui criada por alunos do primeiro ano de Análise e Desenvolvimento de Sistemas da FIAP!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1556193892915",
+      "conditions": "#Sobre_Fabia && @criacao",
+      "dialog_node": "response_1_1566564919701",
+      "previous_sibling": "node_1_1556313565372"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ainda tenho poucas funcionalidades... Meus criadores não pensaram em tudo ainda.... Converse comigo para aumentar minhas capacidades!  Atualmente posso: -Dar oi; -Explicar o que são os cursos de nivelamento; -Auxiliar com dúvidas de algoritmos;-Contar piadas!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1556193892915",
+      "metadata": {},
+      "conditions": "#Sobre_Fabia && @funcionalidade",
+      "dialog_node": "node_1_1556313565372",
+      "previous_sibling": "response_4_1566823684782"
+    },
+    {
+      "type": "response_condition",
+      "title": "response_4_1566823684782",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Atualmente estou configurada para auxiliar com o curso de Algoritmos!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1556193892915",
+      "conditions": "#Sobre_Fabia && @ajuda",
+      "dialog_node": "response_4_1566823684782"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "É um algoritmo que toma um problema como entrada e retorna a solução para o problema, geralmente após resolver um número possível de soluções."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_22_1566562026583",
+      "conditions": "#pra_que_serve_pesquisa_sequencial_direta",
+      "dialog_node": "node_24_1566562026586",
+      "previous_sibling": "node_23_1566562026586"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para tornar a pesquisa mais eficiente, com um gráfico logaritmo."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_22_1566562026583",
+      "conditions": "#pra_que_serve_pesquisa_binaria",
+      "dialog_node": "node_5_1566562137783",
+      "previous_sibling": "node_7_1566562123064"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A sentinela é utilizada na busca sequencial, para que em cada iteração do laço, o método teste se, a chave buscada, é a que está passando no laço.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_22_1566562026583",
+      "conditions": "#o_que_e_pesquisa_sequencial_com_sentinela",
+      "dialog_node": "node_10_1566562067287",
+      "previous_sibling": "node_24_1566562026586"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para eliminar o C de dentro do laço, ou seja, na busca sequencial normal, em cada iteração o método testa se a chave buscada é a que está passando."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_22_1566562026583",
+      "conditions": "#pra_que_serve_pesquisa_sequencial_com_sentinela",
+      "dialog_node": "node_7_1566562108304",
+      "previous_sibling": "node_10_1566562067287"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "É um algoritmo de busca em vetores que segue o paradigma de divisão e conquista."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_22_1566562026583",
+      "conditions": "#o_que_e_pesquisa_binaria",
+      "dialog_node": "node_7_1566562123064",
+      "previous_sibling": "node_7_1566562108304"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "É um tipo de pesquisa em vetores ou lista, de modo sequencial, elemento por elemento."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_22_1566562026583",
+      "conditions": "#o_que_e_pesquisa_sequencial_direta",
+      "dialog_node": "node_23_1566562026586"
+    },
+    {
+      "type": "standard",
+      "output": {},
+      "parent": "node_1_1556673919580",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@resposta",
+      "dialog_node": "node_1_1556795818700",
+      "digress_out": "allow_all"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Existem 3 cursos de nivelamento: Português, Matemática e Algoritmo."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1556310147600",
+      "metadata": {},
+      "conditions": "#Nivelamento && @quantidade",
+      "dialog_node": "node_5_1556310335916",
+      "previous_sibling": "node_1_1556712166351"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Os cursos de nivelamento são as habilidades básicas que um aluno deve possuir para aproveitar melhor as aulas sobre tecnologia e programação."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1556310147600",
+      "metadata": {},
+      "dialog_node": "node_4_1556310332069",
+      "previous_sibling": "node_1_1556373839338"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Os cursos de nivelamento tem em média 10 aulas de curta duração."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_3_1556310147600",
+      "metadata": {},
+      "conditions": "#Nivelamento && @tempo",
+      "dialog_node": "node_1_1556373839338",
+      "previous_sibling": "node_5_1556310335916"
+    },
+    {
+      "type": "standard",
+      "title": "Especialidade",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1556310147600",
+      "metadata": {},
+      "dialog_node": "node_1_1556712166351"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "De nada!"
+              },
+              {
+                "text": "Obrigado "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1556200479979",
+      "metadata": {},
+      "conditions": "#Agradecimento",
+      "dialog_node": "node_2_1556200564949",
+      "previous_sibling": "node_3_1556200568965"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Suave, sem problemas!"
+              },
+              {
+                "text": "No problema amigo"
+              },
+              {
+                "text": "No problemo"
+              },
+              {
+                "text": "Tranquilo"
+              },
+              {
+                "text": "Tranqs"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1556200479979",
+      "metadata": {},
+      "conditions": "@giria",
+      "dialog_node": "node_3_1556200568965"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Poxa, que pena, há algo que eu possa fazer por você?"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_1_1556795818700",
+      "metadata": {},
+      "conditions": "@resposta:não",
+      "dialog_node": "node_3_1556795886973",
+      "previous_sibling": "node_2_1556795866548"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ótimo! O que posso fazer por você?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1556795818700",
+      "metadata": {},
+      "conditions": "@resposta:sim || @resposta:(tudo bem)",
+      "dialog_node": "node_2_1556795866548"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para se compreender o básico de uma linguagem de programação"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1566561217344",
+      "conditions": "#pra_que_serve_principios_da_programacao",
+      "dialog_node": "node_7_1566561217345",
+      "previous_sibling": "node_6_1566561217345"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para enviar instruções e comandos a um computador."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1566561217344",
+      "conditions": "#pra_que_serve_linguagem_de_programacao",
+      "dialog_node": "node_3_1566561307104",
+      "previous_sibling": "node_2_1566561289638"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para que seja possível construir um soft uer, que atinja um determinado objetivo ou resolva um problema."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1566561217344",
+      "conditions": "#pra_que_serve_logica_de_programacao",
+      "dialog_node": "node_7_1566561426366",
+      "previous_sibling": "node_7_1566561342127"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "É um conjunto de regras sintáticas e semânticas usadas para definir um programa de computador."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1566561217344",
+      "conditions": "#o_que_e_linguagem_de_programacao",
+      "dialog_node": "node_2_1566561289638",
+      "previous_sibling": "node_7_1566561217345"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "É a técnica de desenvolver sequências lógicas para atingir um determinado objetivo. Essas sequências lógicas são adaptadas para linguagem de computador, pelo programador, a fim de produzir soft uer."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1566561217344",
+      "conditions": "#o_que_e_logica_de_programacao",
+      "dialog_node": "node_7_1566561342127",
+      "previous_sibling": "node_3_1566561307104"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "São os comandos, e racíocinios básicos de um computador."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1566561217344",
+      "conditions": "#o_que_e_principio_de_programacao",
+      "dialog_node": "node_6_1566561217345"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para se utilizar uma tomada de decisão deve-se usar as estruturas C, então, ou senão."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1566561033409",
+      "conditions": "#como_usar_tomadas_de_decisao",
+      "dialog_node": "node_6_1566560989712",
+      "previous_sibling": "node_1_1566560970985"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "3: C, então, e senão."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1566561033409",
+      "conditions": "#quantas_tomadas_de_decisao_existem",
+      "dialog_node": "node_8_1566561086479",
+      "previous_sibling": "node_6_1566560989712"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para que o programa possa resolver casos reais e entregar as soluções adequadas aos usuários."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1566561033409",
+      "conditions": "#para_que_serve_tomada_de_decisao",
+      "dialog_node": "node_1_1566560970985",
+      "previous_sibling": "node_1_1566560927066"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "São as decisões feitas pelo programa, através das estruturas de: C, então, ou senão, para decidir se o programa deve continuar linearmente."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1566561033409",
+      "conditions": "#o_que_e_tomada_de_decisao",
+      "dialog_node": "node_1_1566560927066"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Matriz é um vetor de vetores."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_17_1566561816942",
+      "conditions": "#o_que_sao_matrizes",
+      "dialog_node": "node_20_1566561816945",
+      "previous_sibling": "node_19_1566561816945"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Usando as estruturas de repetição para se alocar cada variável em uma instância do vetor."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_17_1566561816942",
+      "conditions": "#como_usar_vetores",
+      "dialog_node": "node_5_1566561984817",
+      "previous_sibling": "node_5_1566561968914"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para podermos armazenar uma quantidade grande de variáveis sem precisar criar e declarar uma por uma."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_17_1566561816942",
+      "conditions": "#para_que_servem_vetores_e_matrizes",
+      "dialog_node": "node_21_1566561816945",
+      "previous_sibling": "node_20_1566561816945"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Usando as estruturas de repetição para se alocar cada vetor em uma instância da matriz."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_17_1566561816942",
+      "conditions": "#como_usar_matrizes",
+      "dialog_node": "node_7_1566561998857",
+      "previous_sibling": "node_5_1566561984817"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Os Vetores são matrizes de uma só dimensão, armazenando em cada espaço reservado um valor de variável."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_17_1566561816942",
+      "conditions": "#o_que_sao_vetores",
+      "dialog_node": "node_19_1566561816945",
+      "previous_sibling": "node_18_1566561816945"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para armazenar uma sequência de vetores."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_17_1566561816942",
+      "conditions": "#para_que_servem_matrizes",
+      "dialog_node": "node_5_1566561956499",
+      "previous_sibling": "node_21_1566561816945"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para armazenar uma sequência de variáveis."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_17_1566561816942",
+      "conditions": "#para_que_servem_vetores",
+      "dialog_node": "node_5_1566561968914",
+      "previous_sibling": "node_5_1566561956499"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "São uma coleção de variáveis de mesmo tipo, acessíveis com um único nome e armazenados continuamente na memória."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_17_1566561816942",
+      "conditions": "#o_que_sao_vetores_e_matrizes",
+      "dialog_node": "node_18_1566561816945"
+    },
+    {
+      "type": "folder",
+      "title": "Vetores e Matrizes",
+      "parent": "node_3_1566560889129",
+      "dialog_node": "node_17_1566561816942",
+      "previous_sibling": "node_14_1566561722837"
+    },
+    {
+      "type": "folder",
+      "title": "Analise Algoritmica",
+      "parent": "node_3_1566560889129",
+      "dialog_node": "node_25_1566562161602",
+      "previous_sibling": "node_22_1566562026583"
+    },
+    {
+      "type": "folder",
+      "title": "Historia da TI",
+      "parent": "node_3_1566560889129",
+      "dialog_node": "node_1_1566561076984",
+      "previous_sibling": "node_9_1566561033409"
+    },
+    {
+      "type": "folder",
+      "title": "Pesquisa Sequencial",
+      "parent": "node_3_1566560889129",
+      "dialog_node": "node_22_1566562026583",
+      "previous_sibling": "node_17_1566561816942"
+    },
+    {
+      "type": "folder",
+      "title": "Principios da Programacao",
+      "parent": "node_3_1566560889129",
+      "dialog_node": "node_5_1566561217344",
+      "previous_sibling": "node_25_1566562161602"
+    },
+    {
+      "type": "folder",
+      "title": "Estrutura de Repeticao",
+      "parent": "node_3_1566560889129",
+      "dialog_node": "node_14_1566561722837",
+      "previous_sibling": "node_11_1566561509854"
+    },
+    {
+      "type": "folder",
+      "title": "Variaveis",
+      "parent": "node_3_1566560889129",
+      "dialog_node": "node_8_1566561454134",
+      "previous_sibling": "node_1_1566561076984"
+    },
+    {
+      "type": "folder",
+      "title": "Tomada de Decisão",
+      "parent": "node_3_1566560889129",
+      "dialog_node": "node_9_1566561033409",
+      "previous_sibling": "node_5_1566823942401"
+    },
+    {
+      "type": "folder",
+      "title": "Fluxograma",
+      "parent": "node_3_1566560889129",
+      "dialog_node": "node_11_1566561509854",
+      "previous_sibling": "node_8_1566561454134"
+    },
+    {
+      "type": "standard",
+      "title": "Algoritmos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Algoritmo é uma sequência finita de ações para resolver um tipo de problema."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1566560889129",
+      "conditions": "#o_que_sao_algoritmos",
+      "dialog_node": "node_5_1566823942401"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Medindo o custo do algoritmo, vendo quantas vezes cada passo é executado.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_25_1566562161602",
+      "conditions": "#como_utilizar_analise_algoritmica",
+      "dialog_node": "node_28_1566562161605",
+      "previous_sibling": "node_27_1566562161605"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Determinar os recursos necessários para executar um dado algoritmo. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_25_1566562161602",
+      "conditions": "#para_que_serve_analise_algoritmica",
+      "dialog_node": "node_27_1566562161605",
+      "previous_sibling": "node_26_1566562161605"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Analisar a eficácia do sistema."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_25_1566562161602",
+      "conditions": "#o_que_e_analise_algoritmica",
+      "dialog_node": "node_26_1566562161605"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Descomplicar a sequência operacional do desenvolvimento entre as pessoas envolvidas."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_11_1566561509854",
+      "conditions": "#pra_que_serve_fluxograma",
+      "dialog_node": "node_13_1566561509857",
+      "previous_sibling": "node_12_1566561509857"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "É um diagrama podendo ser entendido como uma representação gráfica de um processo ou algoritmo."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_11_1566561509854",
+      "conditions": "#o_que_e_fluxograma",
+      "dialog_node": "node_12_1566561509857"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ótimo! O que posso fazer por você?"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_1_1556489881569",
+      "metadata": {},
+      "conditions": "@resposta",
+      "dialog_node": "node_3_1556489942168",
+      "previous_sibling": "node_2_1556489923644"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Poxa, que pena, há algo que eu possa fazer por você?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1556489881569",
+      "metadata": {},
+      "conditions": "@resposta:não",
+      "dialog_node": "node_2_1556489923644"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para podermos compreender como nasceram os algoritmos e computadores."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1566561076984",
+      "conditions": "#pra_que_serve_a_historia_do_ti",
+      "dialog_node": "node_3_1566561076986",
+      "previous_sibling": "node_2_1566561076986"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Desde o ábaco em 3 mil antes de cristo, a primeira calculadora em 1971, ao primeiro computador Mark-1 em 1937, a tecnologia da informação está presente na vida dos seres-humanos."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1566561076984",
+      "conditions": "#historia_da_ti",
+      "dialog_node": "node_2_1566561076986"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Beleza! Eai?"
+              },
+              {
+                "text": "Tudo tranquilo!"
+              },
+              {
+                "text": "Suave"
+              },
+              {
+                "text": "To de boa"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1556050983378",
+      "metadata": {},
+      "conditions": "@giria && @pergunta",
+      "dialog_node": "node_2_1556200047975",
+      "previous_sibling": "slot_4_1556134739598"
+    },
+    {
+      "type": "standard",
+      "output": {},
+      "parent": "node_1_1556050983378",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@resposta",
+      "dialog_node": "node_1_1556489881569",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_1_1556673919580"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1556050983378",
+      "dialog_node": "slot_4_1556134739598",
+      "previous_sibling": "node_1_1556489881569"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá!"
+              },
+              {
+                "text": "Oi!"
+              },
+              {
+                "text": "Olá! Tudo bem?"
+              },
+              {
+                "text": "Oi! Tudo bem?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1556050983378",
+      "metadata": {},
+      "conditions": "#Greetings",
+      "dialog_node": "node_4_1556196456504",
+      "previous_sibling": "node_2_1556200047975"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tudo bem! O que posso fazer por você?"
+              },
+              {
+                "text": "Estou bem, obrigada por perguntar, o que posso fazer por você?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1556050983378",
+      "metadata": {},
+      "conditions": "@pergunta",
+      "dialog_node": "node_1_1556673919580"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para armazenar valores inseridos de usuários ou pelo programa."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1566561454134",
+      "conditions": "#pra_que_serve_variavel",
+      "dialog_node": "node_10_1566561454136",
+      "previous_sibling": "node_9_1566561454136"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "É um objeto capaz de reter e representar um valor ou expressão."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1566561454134",
+      "conditions": "#o_que_e_variavel",
+      "dialog_node": "node_9_1566561454136"
+    },
+    {
+      "type": "standard",
+      "title": "Piadas",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Por que a esposa de Heisenberg está insatisfeita?\n\n-Porque quando ele tinha o tempo, ele não tinha a energia e quando ele tinha a posição, ele não tinha o momento."
+              },
+              {
+                "text": "Descartes entra em um bar e o barmen pergunta:\n-Você deseja algo\nDescartes responde:\n-penso que não\nDescartes desaparece"
+              },
+              {
+                "text": "O que é pior que ser atingido por um raio?\n-Ser atingido pelo diâmetro, que tem o dobro do tamanho!!!"
+              },
+              {
+                "text": "Ja ouviram o pagode de Darwin? “Deixa acontecer, naturalmente!”"
+              },
+              {
+                "text": "O Einstein e uma mulher estavam lá, naquele momento de intimidade pela primeira vez, e ela viu ele pelado. O que foi que ela disse?\n– Uau! Que físico!"
+              },
+              {
+                "text": "O Nêutron queria entrar para o ramo dos transportes, mas não conseguia carga."
+              },
+              {
+                "text": "O que tem mais de 3 olhos e menos que 4?\nO Piolho"
+              },
+              {
+                "text": "Como as enzimas se reproduzem?\n-Uma enzima da outra!"
+              },
+              {
+                "text": "O que um etanol disse pro outro?\nEtanóis…"
+              },
+              {
+                "text": "O que 6 carbonos e 6 hidrogênios estão fazendo de mãos dadas na igreja?\n– benzeno"
+              },
+              {
+                "text": "O que o carbono disse quando foi preso?\n“Eu tenho direito a 4 ligações, senão eu quebro esta cadeia”."
+              },
+              {
+                "text": "Que tipo de computador está bombando nas redes sociais?\nO deskTOP"
+              },
+              {
+                "text": "Qual doença se pode pegar ao usar notebook?\nA LAPTOPspirose"
+              },
+              {
+                "text": "O que uma impressora falou para a outra?\nEssa folha aí no chão é sua, ou é impressão minha?"
+              },
+              {
+                "text": "O que é um terapeuta?\n1.024 gigapeutas"
+              },
+              {
+                "text": "Para qual santo você reza quando esquece a senha?\nSão Login"
+              },
+              {
+                "text": "O dono do site esqueceu a própria senha, qual o nome do filme?\nEsqueceram Admin"
+              },
+              {
+                "text": "Quando você percebe que seu computador está velho?\nQuando a placa-mãe já virou avó"
+              },
+              {
+                "text": "Qual a diferença entre Hardware e Software?\nO Hardware você chuta, o Software você xinga"
+              },
+              {
+                "text": "Como o Pai de Santo acessa a Internet?\nCom Umbanda larga"
+              },
+              {
+                "text": "Por que os sites de emprego não informam nada?\nPorque lá as informações são vagas"
+              },
+              {
+                "text": "int x=10; int y=10; return x+y; Qual o nome do filme?\nO Código dá Vinte"
+              },
+              {
+                "text": "Que música Raul Seixas cantava quando pediam para ele programar em Java?\nEu prefiro C ..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "#Piada",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1556201455400",
+      "previous_sibling": "node_1_1556201898357"
+    },
+    {
+      "type": "standard",
+      "title": "Nivelamento",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Nivelamento",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_3_1556310147600",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_1_1556313091284"
+    },
+    {
+      "type": "standard",
+      "title": "Sobre a FIAP",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Não tenho essa função ainda. Para mais informações, acesse: https://www.fiap.com.br"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "#Sobre_FIAP",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1556367470160",
+      "previous_sibling": "node_1_1556193892915"
+    },
+    {
+      "type": "standard",
+      "title": "Duvidas",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Duvidas",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1556313091284",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_1_1556367470160"
+    },
+    {
+      "type": "standard",
+      "title": "Ending",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok, espero ter ajudado, até logo."
+              },
+              {
+                "text": "Tchau!"
+              },
+              {
+                "text": "Bye!"
+              },
+              {
+                "text": "Até mais!"
+              },
+              {
+                "text": "Até logo!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "#Endings",
+      "dialog_node": "node_4_1556492633892",
+      "previous_sibling": "node_1_1556828225951"
+    },
+    {
+      "type": "folder",
+      "title": "Algoritmos",
+      "dialog_node": "node_3_1566560889129",
+      "previous_sibling": "node_3_1556310147600"
+    },
+    {
+      "type": "standard",
+      "title": "Elogios",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Obrigada!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "#Elogio",
+      "dialog_node": "node_10_1556204029560",
+      "previous_sibling": "node_1_1556200479979"
+    },
+    {
+      "type": "standard",
+      "title": "Intent Confidence Check",
+      "output": {
+        "generic": []
+      },
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Em outros casos"
+      },
+      "conditions": "intents[0].confidence < 0.3",
+      "dialog_node": "node_3_1556134366754",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Humano ou Robô",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Na verdade sou a Fiap Artificial Basic Intelligence Assistant, desenvolvida por alunos da FIAP para auxilar os calouros nas disciplinas de nivelamento!"
+              },
+              {
+                "text": "Claro que sou uma huma-hum-hu.... Robô."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "#Humano_ou_Bot",
+      "dialog_node": "node_1_1556200998830",
+      "previous_sibling": "node_3_1566560889129"
+    },
+    {
+      "type": "standard",
+      "title": "Falar com Humano",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Infelizmente não posso transferir, para contatar um agente da FIAP utilize o site https://www.fiap.com.br/fale-conosco/ ou ligue para: +551133858010"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "#Falar_com_humano",
+      "dialog_node": "node_1_1556828225951",
+      "previous_sibling": "node_2_1556201455400"
+    },
+    {
+      "type": "standard",
+      "title": "Insultos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok...."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "#Insultos",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1556201898357",
+      "previous_sibling": "node_10_1556204029560"
+    },
+    {
+      "type": "standard",
+      "title": "Agradecimento",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Agradecimento",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1556200479979",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_1_1556200998830"
+    },
+    {
+      "type": "standard",
+      "title": "Sobre a Fabia-Fiap",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Sobre_Fabia",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1556193892915",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_1_1556050983378"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi."
+              },
+              {
+                "text": "Acho que não entendi direito..."
+              },
+              {
+                "text": "Eu não entendi o que você quis dizer..."
+              },
+              {
+                "text": "Não entendi."
+              },
+              {
+                "text": "Não entendi, poderia me explicar novamente?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_4_1556492633892"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "output": {},
+      "metadata": {
+        "fallback": "leave",
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Greetings",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1556050983378",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_3_1556134366754"
+    },
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá. Sou a Fábia, a Professora Assistente da FIAP. Como posso te ajudar?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    }
+  ],
+  "workspace_id": "bea7ba56-de4a-4c0e-bfb0-2ea5968644f9",
+  "counterexamples": [
+    {
+      "text": "haverá aula amanhã?"
+    },
+    {
+      "text": "metodos de ordenação"
+    },
+    {
+      "text": "nao"
+    },
+    {
+      "text": "nao sei o que perguntar para ela"
+    },
+    {
+      "text": "pq vc faz isso"
+    },
+    {
+      "text": "ta afim ne"
+    },
+    {
+      "text": "to com tedio"
+    },
+    {
+      "text": "tudo"
+    }
+  ],
+  "system_settings": {
+    "tooling": {
+      "store_generic_responses": true
+    }
+  },
+  "learning_opt_out": false,
+  "status": "Available"
+}
