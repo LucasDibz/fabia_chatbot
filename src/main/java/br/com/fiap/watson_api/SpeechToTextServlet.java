@@ -43,7 +43,9 @@ public class SpeechToTextServlet extends HttpServlet {
 
 		RecognizeOptions recognizeOptions = new RecognizeOptions.Builder().audio(tempFile)
 				.contentType(HttpMediaType.AUDIO_WAV).model("pt-BR_BroadbandModel")
-				.languageCustomizationId("<language_customization_id>").build();
+//				.languageCustomizationId("<language_customization_id>")
+//				.acousticCustomizationId("<acousticCustomizationId>")
+				.build();
 
 		SpeechRecognitionResults transcript = service.recognize(recognizeOptions).execute().getResult();
 

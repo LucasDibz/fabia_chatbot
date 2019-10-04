@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 import br.com.fiap.beans.Conteudo;
+import br.com.fiap.beans.Disciplina;
 import br.com.fiap.conexao.Conexao;
 
 public class ConteudoDAO {
@@ -24,7 +25,7 @@ public class ConteudoDAO {
 		stmt = con.prepareStatement(
 				"INSERT INTO T_CHATBOT_CONTEUDO(CD_CONTEUDO,CD_DISCIPLINA,DS_TITULO,LC_CONTEUDO) VALUES (?,?,?,?)");
 		stmt.setInt(1, c.getCodigo());
-		stmt.setInt(2, c.getCd_disciplina());
+		stmt.setInt(2, c.getDisciplina().getCodigo());
 		stmt.setString(3, c.getTitulo());
 		stmt.setString(4, c.getLocal());
 		return stmt.executeUpdate();
@@ -55,8 +56,15 @@ public class ConteudoDAO {
 		stmt.setInt(1, codigo);
 		rs = stmt.executeQuery();
 		if (rs.next()) {
-			return new Conteudo(rs.getInt("CD_CONTEUDO"), rs.getInt("CD_DISCIPLINA"), rs.getString("DS_TITULO"),
-					rs.getString("LC_CONTEUDO"));
+			Conteudo objeto = new Conteudo();
+			objeto.setCodigo(rs.getInt("CD_CONTEUDO"));
+			objeto.setTitulo(rs.getString("DS_TITULO"));
+			objeto.setLocal(rs.getString("LC_CONTEUDO"));
+			DisciplinaDAO dao = new DisciplinaDAO();
+			Disciplina disc = dao.getDisciplina(rs.getInt("CD_DISCIPLINA"));
+			objeto.setDisciplina(disc);
+			dao.close();
+			return objeto;
 		} else {
 			return new Conteudo();
 		}

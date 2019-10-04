@@ -11,17 +11,17 @@ public class AlunoBO {
 
 		// Campos Obrigatorios
 		if (objetoAluno.getRm() == 0)
-			return "RM é Obrigat�rio";
+			return "RM é Obrigatorio";
 		if (objetoAluno.getNome() == null)
-			return "Nome é Obrigat�rio";
+			return "Nome é Obrigatorio";
 		if (objetoAluno.getEmail() == null)
-			return "Email é Obrigat�rio";
+			return "Email é Obrigatorio";
 		if (objetoAluno.getSenha() == null)
-			return "Senha é Obrigat�rio";
+			return "Senha é Obrigatorio";
 		if (objetoAluno.getCpf() == 0)
-			return "CPF é Obrigat�rio";
+			return "CPF é Obrigatorio";
 		if (objetoAluno.getCep() == 0)
-			return "CEP é Obrigat�rio";
+			return "CEP é Obrigatorio";
 
 		// PK RM_ALUNO DEVE SER UNICO
 		AlunoDAO alunoDAO = new AlunoDAO();
@@ -82,7 +82,7 @@ public class AlunoBO {
 		boolean found = matcher.find();
 
 		if (found)
-			return "Senha não pode conter espa�os";
+			return "Senha não pode conter espaços";
 
 		AlunoDAO alunoDAO = new AlunoDAO();
 		int x = alunoDAO.updatePasswordAluno(cod, newPass);

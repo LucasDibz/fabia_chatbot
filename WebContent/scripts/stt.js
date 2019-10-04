@@ -88,6 +88,7 @@ function sendBlobToText(blob) {
 		}
 	});
 	xhr.send(blob);
+	callBot(resposta);
 }
 
 
