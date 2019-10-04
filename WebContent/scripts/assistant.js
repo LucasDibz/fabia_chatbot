@@ -43,7 +43,8 @@ function callBot(msg) {
 			respostas.forEach(function(resposta) {
 				console.log(resposta);
 				if(!(resposta === null) && !(resposta == ""))
-					createMessage(resposta, "bot");
+//					createMessage(resposta, "bot");
+					sendMessageToVoice(resposta, "bot");
 			});
 		}else{
 			// Codigo de deu ruim!

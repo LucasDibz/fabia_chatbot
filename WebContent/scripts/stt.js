@@ -62,7 +62,8 @@ btnStop.addEventListener("click", function(event) {
 	
 	rec.stop();
 	gumStream.getAudioTracks()[0].stop();
-	rec.exportWAV(generateBlob);
+//	rec.exportWAV(generateBlob);
+	rec.exportWAV(sendBlobToText);
 });
 
 function generateBlob(blob) {
@@ -79,7 +80,9 @@ function sendBlobToText(blob) {
 			// Deu bom
 			var resposta = JSON.parse(xhr.responseText);
 			resposta[0].alternatives.forEach(function(transcript) {
-				createMessage(transcript.transcript, "me");
+//				createMessage(transcript.transcript, "me");
+				console.log(transcript.transcript, "me");
+				callBot(transcript.transcript, "me");
 			});
 		} else {
 			// Deu ruim
@@ -88,7 +91,6 @@ function sendBlobToText(blob) {
 		}
 	});
 	xhr.send(blob);
-	callBot(resposta);
 }
 
 

@@ -27,6 +27,5 @@
 	<script type="text/javascript" src="scripts/assistant.js"></script>
 	<script type="text/javascript" src="scripts/tts.js"></script>
 	<script type="text/javascript" src="scripts/stt.js"></script>
-	<script type="text/javascript" src="scripts/integracao.js"></script>
 </body>
 </html>
