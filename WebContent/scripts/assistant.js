@@ -45,9 +45,10 @@ function callBot(msg) {
 				var respostas = JSON.parse(xhr.responseText);
 				respostas.forEach(function(resposta) {
 					console.log(resposta);
-					if (!(resposta === null) && !(resposta == ""))
+					if (!(resposta === null) && !(resposta == "")){
 						createMessage(resposta, "bot");
-					sendMessageToVoice(resposta, "bot");
+						sendMessageToVoice(resposta, "bot");
+					}
 				});
 			} else {
 				// Codigo de deu ruim!
