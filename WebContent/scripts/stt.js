@@ -73,6 +73,8 @@ function generateBlob(blob) {
 
 function sendBlobToText(blob) {
 	var xhr = new XMLHttpRequest();
+	var idioma = document.querySelector("#idioma").value;
+	console.log(idioma);
 	xhr.open("POST", "stt", true);
 	xhr.setRequestHeader("Content-type", "audio/wav");
 	xhr.addEventListener("load", function() {
@@ -90,6 +92,7 @@ function sendBlobToText(blob) {
 			console.log(xhr.responseText);
 		}
 	});
+	
 	xhr.send(blob);
 }
 

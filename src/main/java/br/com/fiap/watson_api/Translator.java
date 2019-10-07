@@ -24,9 +24,14 @@ public class Translator extends HttpServlet {
 
 	private Context context;
 	private static final long serialVersionUID = -8716683257301345455L;
+	// Keys
+	String translatorKey = "<apikey>";
+	String iamKey = "<apikey>";
+	String skillKey = "<apikey>";
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// Keys
 
 		String idioma = req.getParameter("idioma"); // pt
 		System.out.println(idioma);
@@ -43,7 +48,7 @@ public class Translator extends HttpServlet {
 	}
 
 	private String translateMe(String msg, String idioma) {
-		IamOptions options = new IamOptions.Builder().apiKey("<apykey>").build();
+		IamOptions options = new IamOptions.Builder().apiKey(translatorKey).build();
 
 		LanguageTranslator languageTranslator = new LanguageTranslator("2018-05-01", options);
 
@@ -75,7 +80,7 @@ public class Translator extends HttpServlet {
 	}
 
 	private String translateBot(String msg, String idioma) {
-		IamOptions options = new IamOptions.Builder().apiKey("<apykey>").build();
+		IamOptions options = new IamOptions.Builder().apiKey(translatorKey).build();
 
 		LanguageTranslator languageTranslator = new LanguageTranslator("2018-05-01", options);
 
@@ -95,11 +100,11 @@ public class Translator extends HttpServlet {
 	private MessageResponse assistantAPICall(String msg) {
 
 		// Configuração de autenticação do serviço
-		IamOptions options = new IamOptions.Builder().apiKey("<apykey>").build();
+		IamOptions options = new IamOptions.Builder().apiKey(iamKey).build();
 
 		// Criando o objeto do serviço desejado
 		Assistant service = new Assistant("2018-02-16", options);
-		String workspaceId = "<apykey>";
+		String workspaceId = skillKey;
 
 		// Preparando a mensagem de envio
 		MessageInput input = new MessageInput();

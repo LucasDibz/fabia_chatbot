@@ -8,6 +8,7 @@ btnGetVoice.addEventListener("click", function(event) {
 
 function sendMessageToVoice(msg) {
 	var xhr = new XMLHttpRequest();
+	var idioma = document.querySelector("#idioma").value;
 	xhr.open("POST", "tts", true);
 	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=utf-8");
 	xhr.addEventListener("load", function() {
@@ -22,7 +23,7 @@ function sendMessageToVoice(msg) {
 		}
 	});
 	xhr.responseType = 'blob';
-	var data = "question=" + msg;
+	var data = "question=" + msg + "&idioma=" + idioma;
 	xhr.send(data);
 }
 

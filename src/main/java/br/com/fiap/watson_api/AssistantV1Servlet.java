@@ -21,6 +21,8 @@ public class AssistantV1Servlet extends HttpServlet {
 
 	private Context context;
 	private static final long serialVersionUID = -8716683257301345455L;
+	private String iamKey = "<apikey>";
+	private String skillKey = "<apikey>";
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -38,11 +40,11 @@ public class AssistantV1Servlet extends HttpServlet {
 	private MessageResponse assistantAPICall(String msg) {
 
 		// Configuração de autenticação do serviço
-		IamOptions options = new IamOptions.Builder().apiKey("<apykey>").build();
+		IamOptions options = new IamOptions.Builder().apiKey(iamKey).build();
 
 		// Criando o objeto do serviço desejado
 		Assistant service = new Assistant("2018-02-16", options);
-		String workspaceId = "<apykey>";
+		String workspaceId = skillKey;
 
 		// Preparando a mensagem de envio
 		MessageInput input = new MessageInput();

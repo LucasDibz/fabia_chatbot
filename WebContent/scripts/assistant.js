@@ -67,8 +67,10 @@ function callBot(msg) {
 				var respostas = JSON.parse(xhr.responseText);
 				respostas.forEach(function(resposta) {
 					console.log(resposta);
-					if(!(resposta === null) && !(resposta == ""))
+					if(!(resposta === null) && !(resposta == "")){
 						createMessage(resposta, "bot");
+						sendMessageToVoice(resposta, "bot");
+					}
 				});
 			}else{
 				// Codigo de deu ruim!
@@ -77,7 +79,6 @@ function callBot(msg) {
 			}
 		});
 	}
-	var idiomaSel = "idioma=" + idioma;
 	var data = "question=" + msg + "&idioma=" + idioma;
 	xhr.send(data);
 }
