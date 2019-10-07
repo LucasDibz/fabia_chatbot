@@ -33,37 +33,51 @@ btnSendQuestion.addEventListener("click", function(event) {
 });
 
 function callBot(msg) {
+	var idioma = document.querySelector("#idioma");
 	var xhr = new XMLHttpRequest();
-	xhr.open("POST", "v1", true);
-	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=utf-8");
-	xhr.addEventListener("load", function() {
-		if(xhr.status == 200) {
-			// Codigo de sucesso
-			var respostas = JSON.parse(xhr.responseText);
-			respostas.forEach(function(resposta) {
-				console.log(resposta);
-				if(!(resposta === null) && !(resposta == ""))
-//					createMessage(resposta, "bot");
+	if (idioma.value == "portugues") {
+		xhr.open("POST", "v1", true);
+		xhr.setRequestHeader("Content-type",
+				"application/x-www-form-urlencoded; charset=utf-8");
+		xhr.addEventListener("load", function() {
+			if (xhr.status == 200) {
+				// Codigo de sucesso
+				var respostas = JSON.parse(xhr.responseText);
+				respostas.forEach(function(resposta) {
+					console.log(resposta);
+					if (!(resposta === null) && !(resposta == ""))
+						createMessage(resposta, "bot");
 					sendMessageToVoice(resposta, "bot");
-			});
-		}else{
-			// Codigo de deu ruim!
-			console.log(xhr.status);
-			console.log(xhr.responseText);
-		}
-	});
+				});
+			} else {
+				// Codigo de deu ruim!
+				console.log(xhr.status);
+				console.log(xhr.responseText);
+			}
+		});
+	}
+	else if (idioma.value == "english"){
+		xhr.open("POST", "traduz", true);
+		xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=utf-8");
+		xhr.addEventListener("load", function() {
+			if(xhr.status == 200) {
+				// Codigo de sucesso
+				var respostas = JSON.parse(xhr.responseText);
+				respostas.forEach(function(resposta) {
+					console.log(resposta);
+					if(!(resposta === null) && !(resposta == "")){
+						createMessage(resposta, "bot");
+						console.log(resposta);
+//						sendMessageToVoice(resposta, "bot");
+				}
+				});
+			}else{
+				// Codigo de deu ruim!
+				console.log(xhr.status);
+				console.log(xhr.responseText);
+			}
+		});
+	}
 	var data = "question=" + msg;
 	xhr.send(data);
 }
-
-
-
-
-
-
-
-
-
-
-
-
