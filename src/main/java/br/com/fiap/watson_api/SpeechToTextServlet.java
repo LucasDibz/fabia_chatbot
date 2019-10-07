@@ -37,15 +37,13 @@ public class SpeechToTextServlet extends HttpServlet {
 			}
 		}
 
-		IamOptions options = new IamOptions.Builder().apiKey("<apikey>").build();
+		IamOptions options = new IamOptions.Builder().apiKey("bL140DnTUZAM6xuym0ERZrzOnW9zC3BNMMLMXT0hixij").build();
 
 		SpeechToText service = new SpeechToText(options);
 
 		RecognizeOptions recognizeOptions = new RecognizeOptions.Builder().audio(tempFile)
-				.contentType(HttpMediaType.AUDIO_WAV).model("pt-BR_BroadbandModel")
-				.languageCustomizationId("<language_customization_id>")
-				.acousticCustomizationId("<acousticCustomizationId>")
-				.build();
+				.contentType(HttpMediaType.AUDIO_WAV).model("pt-BR_BroadbandModel").languageCustomizationId("<apykey>")
+				.acousticCustomizationId("<apykey>").build();
 
 		SpeechRecognitionResults transcript = service.recognize(recognizeOptions).execute().getResult();
 

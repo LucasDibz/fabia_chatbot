@@ -1,5 +1,5 @@
 window.onload = function() {
-	callBot("");
+//	callBot("");
 }
 
 function scrollDivDown(div) {
@@ -33,9 +33,10 @@ btnSendQuestion.addEventListener("click", function(event) {
 });
 
 function callBot(msg) {
-	var idioma = document.querySelector("#idioma");
+	var idioma = document.querySelector("#idioma").value;
+	console.log(idioma);
 	var xhr = new XMLHttpRequest();
-	if (idioma.value == "portugues") {
+	if (idioma == "pt") {
 		xhr.open("POST", "v1", true);
 		xhr.setRequestHeader("Content-type",
 				"application/x-www-form-urlencoded; charset=utf-8");
@@ -57,7 +58,7 @@ function callBot(msg) {
 			}
 		});
 	}
-	else if (idioma.value == "english"){
+	else {
 		xhr.open("POST", "traduz", true);
 		xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=utf-8");
 		xhr.addEventListener("load", function() {
@@ -66,11 +67,8 @@ function callBot(msg) {
 				var respostas = JSON.parse(xhr.responseText);
 				respostas.forEach(function(resposta) {
 					console.log(resposta);
-					if(!(resposta === null) && !(resposta == "")){
+					if(!(resposta === null) && !(resposta == ""))
 						createMessage(resposta, "bot");
-						console.log(resposta);
-//						sendMessageToVoice(resposta, "bot");
-				}
 				});
 			}else{
 				// Codigo de deu ruim!
@@ -79,6 +77,7 @@ function callBot(msg) {
 			}
 		});
 	}
-	var data = "question=" + msg;
+	var idiomaSel = "idioma=" + idioma;
+	var data = "question=" + msg + "&idioma=" + idioma;
 	xhr.send(data);
 }

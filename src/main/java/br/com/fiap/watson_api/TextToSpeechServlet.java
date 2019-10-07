@@ -24,7 +24,7 @@ public class TextToSpeechServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String msg = req.getParameter("question");
 
-		IamOptions options = new IamOptions.Builder().apiKey("<apikey>").build();
+		IamOptions options = new IamOptions.Builder().apiKey("<apykey>").build();
 
 		TextToSpeech service = new TextToSpeech(options);
 

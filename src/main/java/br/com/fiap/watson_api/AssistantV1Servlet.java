@@ -38,11 +38,11 @@ public class AssistantV1Servlet extends HttpServlet {
 	private MessageResponse assistantAPICall(String msg) {
 
 		// Configuração de autenticação do serviço
-		IamOptions options = new IamOptions.Builder().apiKey("<apikey>").build();
+		IamOptions options = new IamOptions.Builder().apiKey("<apykey>").build();
 
 		// Criando o objeto do serviço desejado
 		Assistant service = new Assistant("2018-02-16", options);
-		String workspaceId = "<skill_id>";
+		String workspaceId = "<apykey>";
 
 		// Preparando a mensagem de envio
 		MessageInput input = new MessageInput();
