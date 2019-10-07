@@ -1,64 +1,53 @@
 package br.com.fiap.beans;
 
 public class Progressao {
-	private int rm;
-	private int disciplina;
-	private int conteudo;
+	private Conteudo conteudo;
+	private Aluno aluno;
+	private Disciplina disciplina; 
 	private int status;
-	private String avaliacao;
-
+	private int progressao;
 	public Progressao() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-
-	public Progressao(int rm, int disciplina, int conteudo, int status, String avaliacao) {
+	public Progressao(Conteudo conteudo, Aluno aluno, Disciplina disciplina, int status, int progressao) {
 		super();
-		this.rm = rm;
-		this.disciplina = disciplina;
 		this.conteudo = conteudo;
-		this.status = status;
-		this.avaliacao = avaliacao;
-	}
-
-	public int getRm() {
-		return rm;
-	}
-
-	public void setRm(int rm) {
-		this.rm = rm;
-	}
-
-	public int getDisciplina() {
-		return disciplina;
-	}
-
-	public void setDisciplina(int disciplina) {
+		this.aluno = aluno;
 		this.disciplina = disciplina;
+		this.status = status;
+		this.progressao = progressao;
 	}
-
-	public int getConteudo() {
+	public Conteudo getConteudo() {
 		return conteudo;
 	}
-
-	public void setConteudo(int conteudo) {
+	public void setConteudo(Conteudo conteudo) {
 		this.conteudo = conteudo;
 	}
-
+	public Aluno getAluno() {
+		return aluno;
+	}
+	public void setAluno(Aluno aluno) {
+		this.aluno = aluno;
+	}
+	public Disciplina getDisciplina() {
+		return disciplina;
+	}
+	public void setDisciplina(Disciplina disciplina) {
+		this.disciplina = disciplina;
+	}
 	public int getStatus() {
 		return status;
 	}
-
 	public void setStatus(int status) {
 		this.status = status;
 	}
-
-	public String getAvaliacao() {
-		return avaliacao;
+	public int getProgressao() {
+		return progressao;
+	}
+	public void setProgressao(int progressao) {
+		this.progressao = progressao;
 	}
 
-	public void setAvaliacao(String avaliacao) {
-		this.avaliacao = avaliacao;
-	}
-
+	
 }
