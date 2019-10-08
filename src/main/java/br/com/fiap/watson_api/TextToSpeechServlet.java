@@ -49,7 +49,7 @@ public class TextToSpeechServlet extends HttpServlet {
 			modelo = "ja-JP_EmiV3Voice";
 			break;
 		case "es":
-			modelo = "ja-JP_EmiV3Voice";
+			modelo = "es-LA_SofiaVoice";
 			break;
 		}
 		System.out.println("tts - " + modelo);
