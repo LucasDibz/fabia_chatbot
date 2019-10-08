@@ -59,7 +59,7 @@ public class AlunoBO {
 			return "Quantidade de Letras Inválida";
 
 		// Qtd RM
-		if (objetoAluno.getRm() < 5 || objetoAluno.getRm() > 5)
+		if (objetoAluno.getRm() <= 5 || objetoAluno.getRm() >= 5)
 			return "RM deve possuir 5 digitos";
 
 		// Qtd CPF
