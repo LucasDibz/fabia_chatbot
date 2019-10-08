@@ -1,0 +1,47 @@
+body{
+  background: url(../Imagens/bg.png)no-repeat center center;
+  background-size: cover;
+}
+
+h2{
+  text-align: center;
+  color: #ed145b;
+}
+
+.edit{
+  margin-top: 20%;
+}
+
+.form-container input{
+  width: 100%;
+}
+
+.form-container{
+  border-color: black;
+  padding: 30px 40px;
+  color: #ed145b;
+}
+
+
+.form-container input[type="text"], input[type="password"], input[type="email"]{
+
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.form-container button[type="submit"]{
+
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #FF1493;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+
+}

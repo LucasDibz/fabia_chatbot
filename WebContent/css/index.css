@@ -1,0 +1,54 @@
+body{
+
+  background: url(../Imagens/bg.png)no-repeat center center fixed;
+  background-size: cover;
+}
+
+.form-container{
+
+  border-color: black;
+  padding: 30px 40px;
+  margin-top: 45%;
+  color: #ed145b;
+
+}
+
+h2{
+  text-align: center;
+  color: #ed145b;
+  
+}
+
+.form-container input{
+  width: 100%;
+}
+
+.form-container input[type="text"], input[type="password"]{
+
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.form-container button[type="submit"]{
+
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #FF1493;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+
+}
+
+.form-container a{
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 20px;
+  color: #E6E6FA;
+}

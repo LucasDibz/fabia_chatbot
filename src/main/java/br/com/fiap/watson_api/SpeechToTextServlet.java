@@ -23,8 +23,8 @@ public class SpeechToTextServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 7476959821119009111L;
 	private String iamKey = "<apikey>";
-	private String languageID = "<apikey>";
 	private String acousticID = "<apikey>";
+	private String languageID = "<apikey>";
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

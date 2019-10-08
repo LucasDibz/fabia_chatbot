@@ -25,9 +25,9 @@ public class Translator extends HttpServlet {
 	private Context context;
 	private static final long serialVersionUID = -8716683257301345455L;
 	// Keys
-	String translatorKey = "<apikey>";
 	String iamKey = "<apikey>";
 	String skillKey = "<apikey>";
+	String translatorKey = "<apikey>";
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -58,7 +58,7 @@ public class Translator extends HttpServlet {
 		if (idioma.equals("en")) {
 			translateOptions = new TranslateOptions.Builder().addText(msg).modelId(idioma + "-pt").build();
 			result = languageTranslator.translate(translateOptions).execute().getResult();
-			System.out.println("linha 56 - " + result.getTranslations().get(0).getTranslationOutput());
+			System.out.println("translator linha 56 - " + result.getTranslations().get(0).getTranslationOutput());
 
 		}
 
@@ -67,7 +67,7 @@ public class Translator extends HttpServlet {
 
 			String estrangeiro = languageTranslator.translate(translateOptions).execute().getResult().getTranslations()
 					.get(0).getTranslationOutput();
-			System.out.println("linha 65 - " + estrangeiro);
+			System.out.println("translator linha 65 - " + estrangeiro);
 
 			translateMe(estrangeiro, "en");
 			result = languageTranslator.translate(translateOptions).execute().getResult();
