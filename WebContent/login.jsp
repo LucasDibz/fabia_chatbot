@@ -13,10 +13,10 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://kit.fontawesome.com/c34d53500c.js"
 	crossorigin="anonymous"></script>
-<link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
+
 	<%
 		String msg;
 		if (request.getAttribute("msg") != null) {
@@ -32,16 +32,17 @@
 				<form class="form-container" action="Logar" method="post">
 					<h2>Login</h2>
 					<div class="form-group">
-						<label for="nome">RM</label><br> <input type="text" name="rm"
+						<label for="rm">RM</label><br> <input type="text" name="rm"
 							placeholder="Enter Username">
 					</div>
 					<div class="form-group">
 						<label for="senha">Senha</label><br> <input type="password"
 							name="senha" placeholder="Enter password">
 					</div>
-					<br><a href="cadastro.html">Create new account</a><br><br>
-					<input type="submit" value="Login" class="btn btn-block">
-<!-- 					<button type="submit" name="button" class="btn btn-block"><a href="curso.html">Login</a></button> -->
+					<br> <a href="cadastro.html">Create new account</a><br> <br>
+					<button type="submit" name="button" class="btn btn-block" value="logar">
+						<a href="conteudo.html">Login</a>
+					</button>
 					<br>
 				</form>
 				<span><%=msg%></span>
