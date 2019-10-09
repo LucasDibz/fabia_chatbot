@@ -64,7 +64,7 @@ function callBot(msg) {
 		xhr.addEventListener("load", function() {
 			if(xhr.status == 200) {
 				// Codigo de sucesso
-				var respostas = JSON.parse(xhr.responseText);
+//				var respostas = JSON.parse(xhr.responseText);
 				respostas.forEach(function(resposta) {
 					console.log(resposta);
 					if(!(resposta === null) && !(resposta == "")){

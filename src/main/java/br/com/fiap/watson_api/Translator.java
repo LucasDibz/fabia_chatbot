@@ -33,18 +33,39 @@ public class Translator extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// Keys
 
-		String idioma = req.getParameter("idioma"); // pt
+		String idioma = req.getParameter("idioma");
 		System.out.println(idioma);
 
 		String msg = req.getParameter("question");
-		msg = translateMe(msg, idioma);
+		if (idioma.equals("en")) {
+			msg = translateMe(msg, idioma);
+			System.out.println("msg indo pro bot = " + msg);
+		} else {
+			msg = translateMe(msg, idioma);
+			msg = translateMe(msg, "en");
+			System.out.println("msg indo pro bot = " + msg);
+
+		}
+
 		if (msg.isEmpty())
 			this.context = null;
 
 		MessageResponse response = this.assistantAPICall(msg);
 
 		resp.setContentType("application/json");
-		resp.getWriter().write(translateBot(new Gson().toJson(response.getOutput().getText()), idioma));
+		if (idioma.equals("en"))
+			resp.getWriter().write(translateBot(new Gson().toJson(response.getOutput().getText()), idioma));
+		else {
+			// Need to fix
+			Gson gson = new Gson();
+			String respostaBot = gson.toJson(response.getOutput().getText());
+			System.out.println("respostaBot - " + respostaBot);
+			respostaBot = translateBot(respostaBot, "en");
+			System.out.println("respostaBot Traduzida 1x- " + respostaBot);
+			respostaBot = translateBot(respostaBot, idioma);
+			resp.getWriter().write(respostaBot);
+		}
+
 	}
 
 	private String translateMe(String msg, String idioma) {
@@ -69,9 +90,9 @@ public class Translator extends HttpServlet {
 					.get(0).getTranslationOutput();
 			System.out.println("translator linha 65 - " + estrangeiro);
 
-			translateMe(estrangeiro, "en");
-			result = languageTranslator.translate(translateOptions).execute().getResult();
+//			translateMe(estrangeiro, "en");
 
+			result = languageTranslator.translate(translateOptions).execute().getResult();
 		}
 
 		System.out.println("linha 70 - " + result.getTranslations().get(0).getTranslationOutput());
@@ -85,14 +106,27 @@ public class Translator extends HttpServlet {
 		LanguageTranslator languageTranslator = new LanguageTranslator("2018-05-01", options);
 
 		TranslateOptions translateOptions;
+		TranslationResult result = null;
 
 		if (idioma.equals("en")) {
 			translateOptions = new TranslateOptions.Builder().addText(msg).modelId("pt-" + idioma).build();
+
+			result = languageTranslator.translate(translateOptions).execute().getResult();
+
 		} else {
 			translateOptions = new TranslateOptions.Builder().addText(msg).modelId("en-" + idioma).build();
-		}
 
-		TranslationResult result = languageTranslator.translate(translateOptions).execute().getResult();
+			System.out.println("138 translateBot msg - " + msg);
+			msg.substring(0, msg.length() - 10);
+			String estrangeiro = languageTranslator.translate(translateOptions).execute().getResult().getTranslations()
+					.get(0).getTranslationOutput();
+			System.out.println("translator linha 141 - " + estrangeiro);
+
+//			translateBot(estrangeiro, "en");
+
+			result = languageTranslator.translate(translateOptions).execute().getResult();
+			return result.getTranslations().get(0).getTranslationOutput();
+		}
 
 		return result.getTranslations().get(0).getTranslationOutput();
 	}

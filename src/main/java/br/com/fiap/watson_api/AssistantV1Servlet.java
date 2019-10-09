@@ -35,6 +35,7 @@ public class AssistantV1Servlet extends HttpServlet {
 
 		resp.setContentType("application/json");
 		resp.getWriter().write(new Gson().toJson(response.getOutput().getText()));
+		System.out.println(new Gson().toJson(response.getOutput().getText()));
 	}
 
 	private MessageResponse assistantAPICall(String msg) {
