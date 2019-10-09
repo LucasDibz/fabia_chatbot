@@ -41,7 +41,6 @@
 				<option value="hi">Hindi</option>
 				<option value="hi">Hindi</option>
 				<option value="hu">Húngaro</option>
-				<option value="hu">Húngaro</option>
 				<option value="it">Italian</option>
 				<option value="ja">Japonês</option>
 				<option value="ko">Koreano</option>

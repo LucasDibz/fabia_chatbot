@@ -44,7 +44,6 @@ public class Translator extends HttpServlet {
 			msg = translateMe(msg, idioma);
 			msg = translateMe(msg, "en");
 			System.out.println("msg indo pro bot = " + msg);
-
 		}
 
 		if (msg.isEmpty())
@@ -56,14 +55,14 @@ public class Translator extends HttpServlet {
 		if (idioma.equals("en"))
 			resp.getWriter().write(translateBot(new Gson().toJson(response.getOutput().getText()), idioma));
 		else {
-			// Need to fix
-			Gson gson = new Gson();
-			String respostaBot = gson.toJson(response.getOutput().getText());
-			System.out.println("respostaBot - " + respostaBot);
+			String respostaBot = response.getOutput().getText().get(0);
+			System.out.println("RESPOSTA 64 - " + respostaBot);
 			respostaBot = translateBot(respostaBot, "en");
-			System.out.println("respostaBot Traduzida 1x- " + respostaBot);
 			respostaBot = translateBot(respostaBot, idioma);
-			resp.getWriter().write(respostaBot);
+			System.out.println("REPOSTA 67 - " + respostaBot);
+
+			resp.getWriter().write(new Gson().toJson(respostaBot));
+			System.out.println("JSON BOT - " + new Gson().toJson(respostaBot));
 		}
 
 	}
@@ -85,10 +84,6 @@ public class Translator extends HttpServlet {
 
 		else {
 			translateOptions = new TranslateOptions.Builder().addText(msg).modelId(idioma + "-en").build();
-
-			String estrangeiro = languageTranslator.translate(translateOptions).execute().getResult().getTranslations()
-					.get(0).getTranslationOutput();
-			System.out.println("translator linha 65 - " + estrangeiro);
 
 //			translateMe(estrangeiro, "en");
 
@@ -116,16 +111,7 @@ public class Translator extends HttpServlet {
 		} else {
 			translateOptions = new TranslateOptions.Builder().addText(msg).modelId("en-" + idioma).build();
 
-			System.out.println("138 translateBot msg - " + msg);
-			msg.substring(0, msg.length() - 10);
-			String estrangeiro = languageTranslator.translate(translateOptions).execute().getResult().getTranslations()
-					.get(0).getTranslationOutput();
-			System.out.println("translator linha 141 - " + estrangeiro);
-
-//			translateBot(estrangeiro, "en");
-
 			result = languageTranslator.translate(translateOptions).execute().getResult();
-			return result.getTranslations().get(0).getTranslationOutput();
 		}
 
 		return result.getTranslations().get(0).getTranslationOutput();

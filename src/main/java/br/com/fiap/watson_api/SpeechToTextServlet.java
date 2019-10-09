@@ -32,39 +32,41 @@ public class SpeechToTextServlet extends HttpServlet {
 		byte[] buffer = new byte[1024 * 1024];
 
 		// Need to fix String idioma
-		String idioma = req.getParameter("idioma");
+//		String idioma = req.getParameter("idioma");
+		String idioma = "pt";
 		System.out.println("stt - " + idioma);
 
 		String modelo = "pt-BR_BroadbandModel";
-		switch (idioma) {
-		case "pt":
-			modelo = "pt-BR_BroadbandModel";
-			break;
-		case "ar":
-			modelo = "ar-AR_BroadbandModel";
-			break;
-		case "zh":
-			modelo = "zh-CN_BroadbandModel";
-			break;
-		case "en":
-			modelo = "en-US_BroadbandModel";
-			break;
-		case "fr":
-			modelo = "fr-FR_BroadbandModel";
-			break;
-		case "de":
-			modelo = "de-DE_BroadbandModel";
-			break;
-		case "ja":
-			modelo = "ja-JP_BroadbandModel";
-			break;
-		case "ko":
-			modelo = "ko-KR_BroadbandModel";
-			break;
-		case "es":
-			modelo = "es-AR_BroadbandModel";
-			break;
-		}
+		// Multiple STT not working
+//		switch (idioma) {
+//		case "pt":
+//			modelo = "pt-BR_BroadbandModel";
+//			break;
+//		case "ar":
+//			modelo = "ar-AR_BroadbandModel";
+//			break;
+//		case "zh":
+//			modelo = "zh-CN_BroadbandModel";
+//			break;
+//		case "en":
+//			modelo = "en-US_BroadbandModel";
+//			break;
+//		case "fr":
+//			modelo = "fr-FR_BroadbandModel";
+//			break;
+//		case "de":
+//			modelo = "de-DE_BroadbandModel";
+//			break;
+//		case "ja":
+//			modelo = "ja-JP_BroadbandModel";
+//			break;
+//		case "ko":
+//			modelo = "ko-KR_BroadbandModel";
+//			break;
+//		case "es":
+//			modelo = "es-AR_BroadbandModel";
+//			break;
+//		}
 		System.out.println("stt - " + modelo);
 
 		InputStream is = req.getInputStream();

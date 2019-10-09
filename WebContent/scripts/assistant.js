@@ -64,14 +64,12 @@ function callBot(msg) {
 		xhr.addEventListener("load", function() {
 			if(xhr.status == 200) {
 				// Codigo de sucesso
-//				var respostas = JSON.parse(xhr.responseText);
-				respostas.forEach(function(resposta) {
+				var resposta = JSON.parse(xhr.responseText);
 					console.log(resposta);
 					if(!(resposta === null) && !(resposta == "")){
 						createMessage(resposta, "bot");
 						sendMessageToVoice(resposta, "bot");
 					}
-				});
 			}else{
 				// Codigo de deu ruim!
 				console.log(xhr.status);
