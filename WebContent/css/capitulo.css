@@ -4,13 +4,51 @@ h1{color: #ed145b; font-weight: 20; text-align: center; text-decoration: underli
 
 p{color:#FFFFFF;}
 
-.my-nav{background-color: black;}
+footer{width: 100%; background-color: black; padding: 50px 0px;}
+
+#home{
+  background-image:  url(../Imagens/algo1.jpg);
+  display: table;
+  height: 70%;
+  position: relative;
+  width: 100%;
+}
+
+.fa-user{
+  padding-right:  10px;
+}
+
+.text{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.text h1{
+  font-size: 300%;
+  text-shadow: 1px 1px 10px #000;
+  color: white;
+  text-decoration: none;
+}
+
+.text h3{
+
+  text-shadow: 1px 1px 10px #000;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.text a{
+  color: white;
+}
+
+.my-nav{background-color: black; text-transform: uppercase; letter-spacing: .1rem;}
 
 .my-nav .navbar-brand{color: #ed145b; font-size: 30px;  font-weight: 20;}
 
 .my-nav .nav-link{color: #ed145b; font-size: 20px; margin: 20px 20px; font-weight: 20;}
 
-.my-nav .nav-link:hover{color: #FF69B4;}
+.my-nav .nav-link:hover{color: white;}
 
 .my-nav .dropdown-menu{background-color: black;}
 
@@ -38,8 +76,32 @@ p{color:#FFFFFF;}
 
 }
 
-.box{
-  border: 2px solid grey;
-  padding: 30px 30px;
+@media (max-width: 576px)  {
 
+.local{padding-left: 120px;
+}
+
+}
+
+.box{
+  margin-bottom: 100px;
+}
+
+.box p{
+  color: black;
+
+}
+
+.social a{
+  font-size: 80px;
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+.fa-facebook-f{
+  color: #3b5998;
+}
+
+.fa-twitter{
+  color: #00aced;
 }
