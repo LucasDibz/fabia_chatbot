@@ -2,6 +2,8 @@ body{background-image: url(../Imagens/gradiente.jpg);}
 
 footer{width: 100%; background-color: black; padding: 50px 0px;}
 
+p{color:#FFFFFF;}
+
 .my-nav{background-color: black; text-transform: uppercase; letter-spacing: .1rem;}
 
 .my-nav .navbar-brand{color: #ed145b; font-size: 30px;  font-weight: 20;}
@@ -53,7 +55,7 @@ audio {
 	width: 100%;
 }
 
-.container {
+.container1 {
 	padding-top: 6%;
 	background: linear-gradient(0deg, rgba(54,54,54,1) 0%,
 		rgba(54,54,54,0.95) 35%, rgba(54,54,54,0.85) 100%);

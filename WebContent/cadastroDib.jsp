@@ -5,13 +5,87 @@
   <head>
     <meta charset="utf-8">
     <title>Cadastro</title>
+    <script src="js\jquery.js"></script>
+    <script src="js\jquery.validate.min.js"></script>
+    <script src="js\additional-methods.min.js"></script>
+    <script src="js\localization\messages_pt_PT.js"></script>
     <link rel="icon" href="Imagens/icon.png">
     <link rel="stylesheet" href="css/cadastro.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
     <script src="https://kit.fontawesome.com/c34d53500c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">     
+    
+    <script type="text/javascript"> 
+      jQuery.validator.addMethod("telefone", function (value, element) {
+        value = value.replace("(", "");
+        value = value.replace(")", "");
+      value = value.replace("-", "");
+      return this.optional(element) || /[0-9]{10}/.test(value);
+      
+    }, "Por favor, um telefone válido");
+    
+    jQuery.validator.addMethod("sonumeros", function (value, element) {
+      return this.optional(element) || /[0-9]{5}/.test(value);
+  
+    }, "O rm só pode conter numeros  ");
+    
+    $.validator.addMethod( "semespaço", function( value, element ) {
+      return this.optional( element ) || /^\S+$/i.test( value );
+    }, "Rm não deve conter espaços" );   
+    
+    
+    $(document).ready(function(){
+      $("#formcadastro").validate({
+        rules:{
+          nome: {
+                required: true,
+                maxlength:50,
+                minlength:6,
+                minWords: 2,
+                required: true
+              },
+              email:{
+                required: true,
+                email: true
+              },
+              confirmesenha:{
+                equalTo:senha,
+                required: true
+                
+              },
+              cpf:{
+                cpfBR:11,
+                required: true,
+                sonumeros:true
+              },
+              telefone:{
+                telefone:true,
+                sonumeros:true
+              },
+              
+              cep:{
+                postalcodeBR: true,
+                required: true,
+                sonumeros:true
+              },
+              rm:{
+                maxlength:5,
+                minlength:5,
+                required: true,
+                semespaço:true,
+                sonumeros:true
+                
+              },
+              
+              
+              submitHandler: function(form){
+                alert("Cadastrado")
+              }
+            }
+          })
+        })
+         
   </head>
     <body>
 

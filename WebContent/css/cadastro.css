@@ -45,3 +45,11 @@ h2{
   border-radius: 20px;
 
 }
+
+.link{
+	color:white;	
+}
+
+.link:hover{
+	color:white;
+}

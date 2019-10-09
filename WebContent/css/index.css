@@ -52,3 +52,9 @@ h2{
   line-height: 20px;
   color: #E6E6FA;
 }
+
+.form-container a:hover{  
+  color: #E6E6FA;
+}
+
+
