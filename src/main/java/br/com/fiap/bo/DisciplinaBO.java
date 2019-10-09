@@ -45,7 +45,7 @@ public class DisciplinaBO {
 			return d;
 		}
 	}
-
+//////////////////////////////
 	public String atualizaDisciplina(int codigo, int status) throws Exception {
 		DisciplinaDAO disciplinaDAO = new DisciplinaDAO();
 		
@@ -55,6 +55,7 @@ public class DisciplinaBO {
 		else
 			return "Status Atualizado!";
 	}
+	/////////////////////////////////////////
 	public String deletarDisciplina (Conteudo cont,Disciplina dis) throws Exception{
 		DisciplinaDAO discdao = new DisciplinaDAO();
 		Disciplina disci = discdao.getDisciplina(dis.getCodigo());

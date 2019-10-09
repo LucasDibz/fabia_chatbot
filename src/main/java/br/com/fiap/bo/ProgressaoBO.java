@@ -28,7 +28,7 @@ public class ProgressaoBO {
 		return "Progressao Cadastrada";
 
 	}
-
+////////////////////////////////////////////
 	public String updateProgressao(int status, int cd_conteudo, int cd_disciplina,Progressao prog) throws Exception {
 	ProgressaoDAO progressaoDAO = new ProgressaoDAO();
 
@@ -39,6 +39,8 @@ public class ProgressaoBO {
 		else
 			return "Progressao Atualizada!";	
 }
+	
+	///////////////////////////////////
 	public String updateStatusProgressao(int status, int cd_conteudo, int cd_disciplina,Progressao prog) throws Exception{
 		ProgressaoDAO progressaoDAO = new ProgressaoDAO();
 	
@@ -49,6 +51,7 @@ public class ProgressaoBO {
 		else
 			return "Status da  Progressao Atualizada!";	
 	}
+	//////////////////////
 	public String deletarProgressao(Progressao prog) throws Exception {
 		ProgressaoDAO progressaodao = new ProgressaoDAO();
 
