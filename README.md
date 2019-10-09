@@ -5,17 +5,15 @@ Fabia é um chatbot (sendo desenvolvido por alunos) para auxiliar os novos aluno
 
 *Tecnologias Utilizadas*\
 IBM Watson Assistant\
-Tone Analyzer\
 Speech to Text\
 Text to Speech\
+Translator\
 MySQLDeveloper\
-Astah\
-Microsoft Word\
-Microsoft Power Point
+OracleDB\
 
 
 *Integrantes:*\
 Lucas Dib		          	RM: 82029\
 Leonardo Santos			    RM: 83931\
 Luiz Henrique		      	RM: 82270\
-Fábio Monteiro	     		RM: 83821
+Fabio Monteiro	     		RM: 83821
