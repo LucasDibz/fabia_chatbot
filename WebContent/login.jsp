@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@page import="java.sql.*"%>
+<%@page import="br.com.fiap.conexao.*"%>
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
 <head>
@@ -40,7 +42,8 @@
 							name="senha" placeholder="Enter password">
 					</div>
 					<br> <a href="cadastro.html">Create new account</a><br> <br>
-					<button type="submit" name="button" class="btn btn-block" value="logar">
+					<button type="submit" name="button" class="btn btn-block"
+						value="logar">
 						<a href="conteudo.html">Login</a>
 					</button>
 					<br>
@@ -52,3 +55,4 @@
 
 </body>
 </html>
+
