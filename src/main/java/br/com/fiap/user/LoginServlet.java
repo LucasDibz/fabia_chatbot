@@ -31,8 +31,13 @@ public class LoginServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
-
-		int rm = Integer.parseInt(request.getParameter("rm"));
+		int rm = 0;
+		try {
+			rm = Integer.parseInt(request.getParameter("rm"));
+		} catch (Exception e) {
+			request.setAttribute("msg", "Usuário Inválido");
+			request.getRequestDispatcher("login.jsp").forward(request, response);
+		}
 		String senha = request.getParameter("senha");
 
 		session = request.getSession();
@@ -41,7 +46,7 @@ public class LoginServlet extends HttpServlet {
 		try {
 			aluno.loginAluno(rm, senha);
 			session.setAttribute("rm", rm);
-			response.sendRedirect("index.jsp");
+			response.sendRedirect("conteudo.html");
 		} catch (Exception e) {
 			request.setAttribute("msg", "Usuário ou Senha inválidos");
 			request.getRequestDispatcher("login.jsp").forward(request, response);
@@ -49,3 +54,4 @@ public class LoginServlet extends HttpServlet {
 	}
 
 }
+
