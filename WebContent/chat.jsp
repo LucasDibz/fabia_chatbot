@@ -19,7 +19,7 @@
       <a class="navbar-brand h1 mb-0"href="#">FABIA</a>
 
       <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target" type="button" name="button">
-        <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+        <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span></span>
       </button>
 
       <div class="collapse navbar-collapse" id="collapse_target">
@@ -28,15 +28,15 @@
         <li class="nav-item">
           <a class="nav-link" href="conteudo.html">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="chat.jsp">ChatBot</a>
-        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="chat.jsp">Chatbot</a>
+        </li> -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="#dropdown_target" href="#">Capítulos</a>
           <span class="caret"></span>
 
         <div class="dropdown-menu" aria-labelledby="dropdown_target">
-          
+         <ul class="navbar-nav">
           <a class="dropdown-item" href="cap1.html">Capitulo 1</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="cap2.html">Capitulo 2</a>
@@ -50,27 +50,29 @@
           <a class="dropdown-item" href="cap6.html">Capitulo 6</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="cap7.html">Capitulo 7</a>
-        
+            </ul>
+       
         </div>
         </li>
       </ul>
 
-      <ul class="navbar-nav ml-auto">        
-     <!--  <li class="nav-item">
-        <a class="nav-link" href="admin.html">Admin</a>
-      </li> -->
+      <ul class="navbar-nav ml-auto">
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="admin.html">Admin</a>
+        </li> -->
       <li class="nav-item">
-          <a class="nav-link" href="usuario.jsp"><i class="fas fa-user"></i>Meus dados</a>
+          <a class="nav-link" href="usuario.html"><i class="fas fa-user"></i>Meus dados</a>
       </li>
       <li class="divisor" role="separator"></li>
       <li class="nav-item">
-        <a class="nav-link" href="login.jsp">Sair</a>
+        <a class="nav-link" href="index.html">Sair</a>
       </li>
       </ul>
     </div>
+    </div>
     </nav>
 
-    <br><br><br>
+    <br><br><br>   
 
     <section class="container1">
 		<h2 class="title">ChatBot</h2>
