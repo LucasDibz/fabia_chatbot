@@ -48,7 +48,7 @@ public class LoginServlet extends HttpServlet {
 			if (aluno.loginAluno(rm, senha) > 0) {
 				System.out.println("LOGUEI");
 				System.out.println("linha 49 RM = " + rm);
-				session.setAttribute("rm", Integer.toString(rm));
+				session.setAttribute("rm", rm);
 				response.sendRedirect("conteudo.html");
 			} else {
 				System.out.println("linha 56 rm = " + rm);
