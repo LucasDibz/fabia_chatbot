@@ -58,9 +58,13 @@ public class AlunoDAO {
 	}
 
 	public int loginAluno(int cod, String senha) throws Exception {
-		stmt = con.prepareStatement("SELECT FROM T_CHATBOT_ALUNO WHERE NR_RM=? AND SN_ALUNO=?");
+		stmt = con.prepareStatement("SELECT NR_RM FROM T_CHATBOT_ALUNO WHERE NR_RM=? AND SN_ALUNO=?");
 		stmt.setInt(1, cod);
 		stmt.setString(2, senha);
-		return stmt.executeUpdate();
+		rs = stmt.executeQuery();
+		if (rs.next()) {
+			return rs.getInt("NR_RM");
+		} else
+			return 0;
 	}
 }

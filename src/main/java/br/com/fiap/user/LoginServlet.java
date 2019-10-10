@@ -35,23 +35,33 @@ public class LoginServlet extends HttpServlet {
 		try {
 			rm = Integer.parseInt(request.getParameter("rm"));
 		} catch (Exception e) {
+			System.out.println("linha 39 - " + rm);
 			request.setAttribute("msg", "Usuário Inválido");
-			request.getRequestDispatcher("login.jsp").forward(request, response);
 		}
+
 		String senha = request.getParameter("senha");
 
+		AlunoBO aluno = new AlunoBO();
 		session = request.getSession();
 
-		AlunoBO aluno = new AlunoBO();
 		try {
-			aluno.loginAluno(rm, senha);
-			session.setAttribute("rm", rm);
-			response.sendRedirect("conteudo.html");
+			if (aluno.loginAluno(rm, senha) > 0) {
+				System.out.println("LOGUEI");
+				System.out.println("linha 49 RM = " + rm);
+				session.setAttribute("rm", Integer.toString(rm));
+				response.sendRedirect("conteudo.html");
+			} else {
+				System.out.println("linha 56 rm = " + rm);
+				request.setAttribute("msg", "Usuário ou Senha inválidos");
+				request.getRequestDispatcher("login.jsp").forward(request, response);
+			}
 		} catch (Exception e) {
+			System.out.println("DEU RUIM");
+			e.printStackTrace();
 			request.setAttribute("msg", "Usuário ou Senha inválidos");
 			request.getRequestDispatcher("login.jsp").forward(request, response);
 		}
+
 	}
 
 }
-

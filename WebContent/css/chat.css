@@ -211,3 +211,20 @@ button:hover {
 .fa-twitter{
   color: #00aced;
 }
+
+.botao{
+	
+	display: block;
+	background: black;
+	font-size: 16px;
+	color: #fff;
+	padding: 10px 20px;
+	border: 0;
+	border-top: 2px black solid;
+  	border-bottom: 2px black solid;
+	border-radius: 3px;
+	text-shadow: 0.05em 0.05em black;
+	width: 150px;
+	margin-right: 15px;
+	
+}

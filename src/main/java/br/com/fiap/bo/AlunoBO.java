@@ -102,14 +102,10 @@ public class AlunoBO {
 		}
 	}
 
-	public String loginAluno(int cod, String senha) throws Exception {
+	public int loginAluno(int cod, String senha) throws Exception {
 		AlunoDAO alunoDAO = new AlunoDAO();
 		int a = alunoDAO.loginAluno(cod, senha);
-		if (a == 0)
-			return "Cadastro não localizado";
-		else {
-			return "Login Aceito!";
-		}
+		return a;
 	}
 
 }
