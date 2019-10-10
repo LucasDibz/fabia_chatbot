@@ -67,11 +67,12 @@ audio {
 	margin: 10px auto;
 	width: 500px;
 	height: 300px;
-	background: #fff;
+	background: lightgray;
 	color: #363636;
 	font-size: 14px;
 	font-family: verdana;
 	overflow: scroll;
+	border: 5px solid black;
 }
 
 .input-question {
@@ -111,7 +112,7 @@ button {
 	padding: 10px 20px;
 	border: 0;
 	border-top: 2px black solid;
-  border-bottom: 2px black solid;
+  	border-bottom: 2px black solid;
 	border-radius: 3px;
 	text-shadow: 0.05em 0.05em black;
 	width: 100px;
@@ -120,9 +121,16 @@ button {
 
 button:hover {
 	background: #FF69B4;
-  border-top: 2px black solid;
+  	border-top: 2px black solid;
 	border-bottom: 2px black solid;
 	cursor: pointer;
+}
+
+button:disabled {
+	background: gray;
+	border-bottom: 2px black solid;
+	pointer-events: none;
+	text-shadow: none;
 }
 
 
