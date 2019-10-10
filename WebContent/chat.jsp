@@ -26,10 +26,10 @@
       <ul class="navbar-nav mr-auto">
         <li class="divisor" role="separator"></li>
         <li class="nav-item">
-          <a class="nav-link" href="curso.html">Home</a>
+          <a class="nav-link" href="conteudo.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="chat.html">ChatBot</a>
+          <a class="nav-link" href="chat.jsp">ChatBot</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="#dropdown_target" href="#">Capítulos</a>
@@ -56,15 +56,15 @@
       </ul>
 
       <ul class="navbar-nav ml-auto">        
-      <li class="nav-item">
+     <!--  <li class="nav-item">
         <a class="nav-link" href="admin.html">Admin</a>
-      </li>
+      </li> -->
       <li class="nav-item">
-          <a class="nav-link" href="usuario.html"><i class="fas fa-user"></i>Meus dados</a>
+          <a class="nav-link" href="usuario.jsp"><i class="fas fa-user"></i>Meus dados</a>
       </li>
       <li class="divisor" role="separator"></li>
       <li class="nav-item">
-        <a class="nav-link" href="index.html">Sair</a>
+        <a class="nav-link" href="login.jsp">Sair</a>
       </li>
       </ul>
     </div>
@@ -81,8 +81,8 @@
 			<button id="sendQuestion">Send</button>
 			<button id="getVoiceButton">Get Voice</button>
 			<button id="recordButton">Record</button>
-			<button id="pauseButton">Pause</button>
-			<button id="stopButton">Stop</button>
+			<button id="pauseButton" disabled>Pause</button>
+			<button id="stopButton" disabled>Stop</button>
 			<select class="botao" id="idioma">
 				<option value="pt" selected="selected">Português</option>
 				<option value="en">Inglês</option>

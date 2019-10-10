@@ -41,14 +41,12 @@
 						<label for="senha">Senha</label><br> <input type="password"
 							name="senha" placeholder="Enter password">
 					</div>
-					<br> <a href="cadastro.html">Create new account</a><br> <br>
+					<span class="alert"><%=msg%></span><br><br>
+					<a href="cadastro.jsp">Create new account</a><br> <br>
 					<button type="submit" name="button" class="btn btn-block"
-						value="logar">
-						<a href="conteudo.html">Login</a>
-					</button>
+						value="Logar">Login</button>
 					<br>
-				</form>
-				<span><%=msg%></span>
+				</form>				
 			</div>
 		</div>
 	</div>

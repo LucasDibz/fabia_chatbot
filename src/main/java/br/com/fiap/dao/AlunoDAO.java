@@ -58,7 +58,7 @@ public class AlunoDAO {
 	}
 
 	public int loginAluno(int cod, String senha) throws Exception {
-		stmt = con.prepareStatement("SELECT NR_RM FROM T_CHATBOT_ALUNO WHERE NR_RM=? AND SN_ALUNO=?");
+		stmt = con.prepareStatement("SELECT NR_RM, SN_ALUNO FROM T_CHATBOT_ALUNO WHERE NR_RM=? AND SN_ALUNO=?");
 		stmt.setInt(1, cod);
 		stmt.setString(2, senha);
 		rs = stmt.executeQuery();
