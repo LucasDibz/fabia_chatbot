@@ -16,6 +16,8 @@ import com.ibm.watson.assistant.v1.model.MessageInput;
 import com.ibm.watson.assistant.v1.model.MessageOptions;
 import com.ibm.watson.assistant.v1.model.MessageResponse;
 import com.ibm.watson.language_translator.v3.LanguageTranslator;
+import com.ibm.watson.language_translator.v3.model.IdentifiedLanguages;
+import com.ibm.watson.language_translator.v3.model.IdentifyOptions;
 import com.ibm.watson.language_translator.v3.model.TranslateOptions;
 import com.ibm.watson.language_translator.v3.model.TranslationResult;
 
@@ -33,11 +35,24 @@ public class Translator extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// Keys
 
-		String idioma = req.getParameter("idioma");
-		System.out.println(idioma);
-
+		String idioma = null;
 		String msg = req.getParameter("question");
-		if (idioma.equals("en")) {
+		if (msg.isEmpty()) {
+			this.context = null;
+		} else if (msg.equals("oi") || msg.equals("olá")) {
+			idioma = "pt";
+		} else {
+			IamOptions options = new IamOptions.Builder().apiKey(translatorKey).build();
+			LanguageTranslator languageTranslator = new LanguageTranslator("2018-05-01", options);
+			IdentifyOptions identifyOptions = new IdentifyOptions.Builder().text(msg).build();
+			IdentifiedLanguages languages = languageTranslator.identify(identifyOptions).execute().getResult();
+			idioma = languages.getLanguages().get(0).getLanguage();
+			System.out.println("idioma identificado = " + idioma);
+		}
+
+		if (idioma.equals("pt")) {
+
+		} else if (idioma.equals("en")) {
 			msg = translateMe(msg, idioma);
 			System.out.println("msg indo pro bot = " + msg);
 		} else {
@@ -46,25 +61,26 @@ public class Translator extends HttpServlet {
 			System.out.println("msg indo pro bot = " + msg);
 		}
 
-		if (msg.isEmpty())
-			this.context = null;
-
 		MessageResponse response = this.assistantAPICall(msg);
 
+		String idiomaResposta = req.getParameter("idioma");
+		System.out.println(idiomaResposta);
+
 		resp.setContentType("application/json");
-		if (idioma.equals("en"))
-			resp.getWriter().write(translateBot(new Gson().toJson(response.getOutput().getText()), idioma));
+
+		if (idiomaResposta.equals("pt"))
+			resp.getWriter().write(new Gson().toJson(response.getOutput().getText()));
+		else if (idiomaResposta.equals("en"))
+			resp.getWriter().write(translateBot(new Gson().toJson(response.getOutput().getText()), idiomaResposta));
 		else {
 			String respostaBot = response.getOutput().getText().get(0);
 			System.out.println("RESPOSTA 64 - " + respostaBot);
 			respostaBot = translateBot(respostaBot, "en");
-			respostaBot = translateBot(respostaBot, idioma);
+			respostaBot = translateBot(respostaBot, idiomaResposta);
 			System.out.println("REPOSTA 67 - " + respostaBot);
 
 			resp.getWriter().write(new Gson().toJson(respostaBot));
-			System.out.println("JSON BOT - " + new Gson().toJson(respostaBot));
 		}
-
 	}
 
 	private String translateMe(String msg, String idioma) {
@@ -78,19 +94,15 @@ public class Translator extends HttpServlet {
 		if (idioma.equals("en")) {
 			translateOptions = new TranslateOptions.Builder().addText(msg).modelId(idioma + "-pt").build();
 			result = languageTranslator.translate(translateOptions).execute().getResult();
-			System.out.println("translator linha 56 - " + result.getTranslations().get(0).getTranslationOutput());
+			System.out.println("translator - " + result.getTranslations().get(0).getTranslationOutput());
 
 		}
 
 		else {
 			translateOptions = new TranslateOptions.Builder().addText(msg).modelId(idioma + "-en").build();
 
-//			translateMe(estrangeiro, "en");
-
 			result = languageTranslator.translate(translateOptions).execute().getResult();
 		}
-
-		System.out.println("linha 70 - " + result.getTranslations().get(0).getTranslationOutput());
 
 		return result.getTranslations().get(0).getTranslationOutput();
 	}
