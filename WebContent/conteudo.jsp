@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
 <head>
@@ -34,8 +36,22 @@
 				<!--         <li class="nav-item"> -->
 				<!--           <a class="nav-link" href="admin.html">Admin</a> -->
 				<!--         </li> -->
-				<li class="nav-item"><a class="nav-link" href="usuario.html"><i
-						class="fas fa-user"></i>Meus dados</a></li>
+				<li class="nav-item">
+				<form action="UserServlet" method="post">
+					<input type="hidden" value="Exibir" name="action">
+					<input type="hidden" value=<%= session.getAttribute("rm") %> name="rm">
+					<button type="submit" name="button">Meus Dados</button>
+				</form>
+				
+<!-- 				<a class="nav-link" href="usuario.html"><i -->
+<!-- 						class="fas fa-user"></i>Meus dados</a> -->
+				
+						
+						
+						
+						
+						
+						</li>
 				<li class="divisor" role="separator"></li>
 				<li class="nav-item"><a class="nav-link" href="login.jsp">Sair</a>
 				</li>
@@ -49,18 +65,18 @@
 			<h1 class="display-4">Cursos de Nivelamento</h1>
 		</div>
 		<div class="cursos">
-			<h3>Português</h3>
-			<h3>Matemática</h3>
+			<h3>PortuguÃªs</h3>
+			<h3>MatemÃ¡tica</h3>
 			<h3 class="active">Algoritmo</h3>
 		</div>
 		<ul class="lista">
-			<li><a href="cap1.html">Capítulo 1 - Principios da
-					programação</li>
-			<li><a href="cap2.html">Capitulo 2 - Tomada de Decisão</li>
-			<li><a href="cap3.html">Capitulo 3 - Estruturas de Repetição</li>
+			<li><a href="cap1.html">CapÃ­tulo 1 - Principios da
+					programaÃ§Ã£o</li>
+			<li><a href="cap2.html">Capitulo 2 - Tomada de DecisÃ£o</li>
+			<li><a href="cap3.html">Capitulo 3 - Estruturas de RepetiÃ§Ã£o</li>
 			<li><a href="cap4.html">Capitulo 4 - Vetores e Matrizes</li>
-			<li><a href="cap5.html">Capitulo 5 - Análise Algorítmica</li>
-			<li><a href="cap6.html">Capitulo 6 - Ordenação de Vetores</li>
+			<li><a href="cap5.html">Capitulo 5 - AnÃ¡lise AlgorÃ­tmica</li>
+			<li><a href="cap6.html">Capitulo 6 - OrdenaÃ§Ã£o de Vetores</li>
 			<li><a href="cap7.html">Capitulo 7 - Busca</li>
 		</ul>
 	</div>
@@ -80,8 +96,8 @@
 					</div>
 				</div>
 				<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12">
-					<p class="lead">Localização</p>
-					<p class="address">Aclimação, Av. Lins de Vasconcelos, 1222 e
+					<p class="lead">LocalizaÃ§Ã£o</p>
+					<p class="address">AclimaÃ§Ã£o, Av. Lins de Vasconcelos, 1222 e
 						1264</p>
 					<div class="local">
 						<p>

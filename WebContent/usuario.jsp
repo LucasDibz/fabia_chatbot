@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -74,31 +77,31 @@
           <form class="form-container" action="cadastro.html" method="post" id="formcadastro">
             <div class="form-group">
               <label for="rm">RM</label><br>
-              <input type="text" name="rm" placeholder="RM" id="rm">
+              <input type="text" name="rm" value="${aluno.getRm() }" id="rm">
             </div>
             <div class="form-group">
               <label for="nome">Nome</label><br>
-              <input type="text" name="nome" placeholder="Nome Completo" id="nome">
+              <input type="text" name="nome"value="${aluno.getNome() }" id="nome">
             </div>
             <div class="form-group">
               <label for="email">Email</label><br>
-              <input type="email" name="email" placeholder="Email" id="email">
+              <input type="email" name="email" value="${aluno.getEmail() }"  id="email">
             </div>
             <div class="form-group">
               <label for="telefone">Telefone</label><br>
-              <input type="text" name="telefone" placeholder="Telefone" id="telefone">
+              <input type="text" name="telefone" value="${aluno.getTelefone() }" id="telefone">
             </div>
             <div class="form-group">
                 <label for="cpf">CPF</label><br>
-                <input type="text" name="cpf" placeholder="CPF"  id="cpf">
+                <input type="text" name="cpf" value="${aluno.getCpf() }"  id="cpf">
             </div>
             <div class="form-group">
                 <label for="cep">CEP</label><br>
-                <input type="text" name="cep" placeholder="CEP" id="cep">
+                <input type="text" name="cep" value="${aluno.getCep() }" id="cep">
             </div>
             <div class="form-group">
                 <label for="senha">Senha</label><br>
-                <input type="password" name="senha" placeholder="Senha" id="senha">
+                <input type="text" name="senha"value="${aluno.getSenha() }" id="senha">
             </div>
           </form>
         </div>

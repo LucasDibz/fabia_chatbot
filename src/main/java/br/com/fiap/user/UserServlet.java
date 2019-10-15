@@ -20,17 +20,24 @@ public class UserServlet extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 
 		String action = request.getParameter("action");
+		System.out.println("ação = " + action);
 		String retorno = "";
 
 		switch (action) {
-		case "Carregar":
-			break;
 		case "Cadastrar":
 			try {
 				cadastrar(request);
 //				listar(request);
 				retorno = "login.jsp";
 			} catch (Exception e) {
+			}
+			break;
+		case "Exibir":
+			try {
+				buscaAluno(request);
+				retorno = "usuario.jsp";
+			} catch (Exception e) {
+				e.printStackTrace();
 			}
 			break;
 
@@ -53,6 +60,14 @@ public class UserServlet extends HttpServlet {
 		AlunoBO alunoBO = new AlunoBO();
 		alunoBO.novoAluno(aluno);
 
+	}
+
+	private void buscaAluno(HttpServletRequest request) throws Exception {
+		AlunoBO bo = new AlunoBO();
+		int rm = Integer.parseInt(request.getParameter("rm"));
+		System.out.println("rm = " + rm);
+		Aluno aluno = bo.buscaAluno(rm);
+		request.setAttribute("aluno", aluno);
 	}
 
 }

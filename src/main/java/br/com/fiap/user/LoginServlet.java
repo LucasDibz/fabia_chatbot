@@ -49,7 +49,7 @@ public class LoginServlet extends HttpServlet {
 				System.out.println("LOGUEI");
 				System.out.println("linha 49 RM = " + rm);
 				session.setAttribute("rm", rm);
-				response.sendRedirect("conteudo.html");
+				response.sendRedirect("conteudo.jsp");
 			} else {
 				System.out.println("linha 56 rm = " + rm);
 				request.setAttribute("msg", "Usuário ou Senha inválidos");
