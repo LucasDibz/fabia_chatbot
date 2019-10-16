@@ -77,31 +77,31 @@
           <form class="form-container" action="cadastro.jsp" method="post" id="formcadastro">
             <div class="form-group">
               <label for="rm">RM</label><br>
-              <input type="text" name="rm" value="${aluno.getRm() }" id="rm">
+              <input type="text" name="rm" value="${aluno.getRm() }" id="rm" readonly>
             </div>
             <div class="form-group">
               <label for="nome">Nome</label><br>
-              <input type="text" name="nome"value="${aluno.getNome() }" id="nome">
+              <input type="text" name="nome"value="${aluno.getNome() }" id="nome" readonly>
             </div>
             <div class="form-group">
               <label for="email">Email</label><br>
-              <input type="email" name="email" value="${aluno.getEmail() }"  id="email">
+              <input type="email" name="email" value="${aluno.getEmail() }"  id="email" readonly>
             </div>
             <div class="form-group">
               <label for="telefone">Telefone</label><br>
-              <input type="text" name="telefone" value="${aluno.getTelefone() }" id="telefone">
+              <input type="text" name="telefone" value="${aluno.getTelefone() }" id="telefone" readonly>
             </div>
             <div class="form-group">
                 <label for="cpf">CPF</label><br>
-                <input type="text" name="cpf" value="${aluno.getCpf() }"  id="cpf">
+                <input type="text" name="cpf" value="${aluno.getCpf() }"  id="cpf" readonly>
             </div>
             <div class="form-group">
                 <label for="cep">CEP</label><br>
-                <input type="text" name="cep" value="${aluno.getCep() }" id="cep">
+                <input type="text" name="cep" value="${aluno.getCep() }" id="cep" readonly>
             </div>
             <div class="form-group">
                 <label for="senha">Senha</label><br>
-                <input type="text" name="senha"value="${aluno.getSenha() }" id="senha">
+                <input type="text" name="senha"value="${aluno.getSenha() }" id="senha" readonly>
             </div>
           </form>
         </div>
