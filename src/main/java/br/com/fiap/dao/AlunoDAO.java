@@ -27,8 +27,8 @@ public class AlunoDAO {
 		stmt.setString(2, a.getNome());
 		stmt.setString(3, a.getEmail());
 		stmt.setString(4, a.getSenha());
-		stmt.setInt(5, a.getTelefone());
-		stmt.setInt(6, a.getCpf());
+		stmt.setLong(5, a.getTelefone());
+		stmt.setLong(6, a.getCpf());
 		stmt.setInt(7, a.getCep());
 		return stmt.executeUpdate();
 	}

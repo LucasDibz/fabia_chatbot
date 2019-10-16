@@ -5,16 +5,15 @@ public class Aluno {
 	private String nome;
 	private String email;
 	private String senha;
-	private int telefone;
-	private int cpf;
+	private long telefone;
+	private long cpf;
 	private int cep;
 
 	public Aluno() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
-	public Aluno(int rm, String nome, String email, String senha, int telefone, int cpf, int cep) {
+	public Aluno(int rm, String nome, String email, String senha, long telefone, long cpf, int cep) {
 		super();
 		this.rm = rm;
 		this.nome = nome;
@@ -57,19 +56,19 @@ public class Aluno {
 		this.senha = senha;
 	}
 
-	public int getTelefone() {
+	public long getTelefone() {
 		return telefone;
 	}
 
-	public void setTelefone(int telefone) {
+	public void setTelefone(long telefone) {
 		this.telefone = telefone;
 	}
 
-	public int getCpf() {
+	public long getCpf() {
 		return cpf;
 	}
 
-	public void setCpf(int cpf) {
+	public void setCpf(long cpf) {
 		this.cpf = cpf;
 	}
 

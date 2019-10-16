@@ -15,21 +15,24 @@ import br.com.fiap.bo.AlunoBO;
 public class UserServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
+	String retorno = "";
+
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
 
 		String action = request.getParameter("action");
 		System.out.println("ação = " + action);
-		String retorno = "";
 
 		switch (action) {
 		case "Cadastrar":
 			try {
-				cadastrar(request);
-//				listar(request);
-				retorno = "login.jsp";
+				String msg = "";
+				cadastrar(request, retorno, msg);
+				request.setAttribute("msg", msg);
 			} catch (Exception e) {
+				System.out.println("Cadastrar deu ruim");
+				e.printStackTrace();
 			}
 			break;
 		case "Exibir":
@@ -37,28 +40,45 @@ public class UserServlet extends HttpServlet {
 				buscaAluno(request);
 				retorno = "usuario.jsp";
 			} catch (Exception e) {
+				System.out.println("Exibir deu ruim");
 				e.printStackTrace();
 			}
 			break;
 
 		}
 
+		System.out.println("retorno l50 = " + retorno);
 		request.getRequestDispatcher(retorno).forward(request, response);
 
 	}
 
-	private void cadastrar(HttpServletRequest request) throws Exception {
+	private void cadastrar(HttpServletRequest request, String retorno, String msg) throws Exception {
 		int rm = Integer.parseInt(request.getParameter("rm"));
 		String nome = request.getParameter("nome");
 		String email = request.getParameter("email");
-		int telefone = Integer.parseInt(request.getParameter("telefone"));
-		int cpf = Integer.parseInt(request.getParameter("cpf"));
+		long telefone = Long.parseLong(request.getParameter("telefone"));
+		long cpf = Long.parseLong(request.getParameter("cpf"));
 		int cep = Integer.parseInt(request.getParameter("cep"));
 		String senha = request.getParameter("senha");
 
+		System.out.println(rm);
+		System.out.println(nome);
+		System.out.println(email);
+		System.out.println(telefone);
+		System.out.println(cpf);
+		System.out.println(cep);
+		System.out.println(senha);
+
 		Aluno aluno = new Aluno(rm, nome, email, senha, telefone, cpf, cep);
 		AlunoBO alunoBO = new AlunoBO();
-		alunoBO.novoAluno(aluno);
+		msg = alunoBO.novoAluno(aluno);
+		if (msg.equals("Aluno Cadastrado!"))
+			retorno = "login.jsp";
+		else
+			retorno = "cadastro.jsp";
+
+		System.out.println("retorno = " + retorno);
+		System.out.println(msg);
 
 	}
 

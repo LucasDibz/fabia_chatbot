@@ -53,22 +53,24 @@ public class AlunoBO {
 		// Qtd de Letras
 		int qtdLetras = 0;
 		for (int i = 0; i < objetoAluno.getNome().length(); i++)
-			if (Character.isLetter(objetoAluno.getNome().charAt(i)))
+			if (Character.isLetter(objetoAluno.getNome().charAt(i))) {
 				qtdLetras++;
-		if (qtdLetras < 6 || qtdLetras > 50)
-			return "Quantidade de Letras Inválida";
-
+			}
+		if (qtdLetras < 2 || qtdLetras > 50) {
+			return "Quantidade de Letras no Nome Inválida";
+		}
 		// Qtd RM
-		if (objetoAluno.getRm() <= 5 || objetoAluno.getRm() >= 5)
+		if (objetoAluno.getRm() < 10000 || objetoAluno.getRm() > 99999)
 			return "RM deve possuir 5 digitos";
-
+// **************
 		// Qtd CPF
-		if (objetoAluno.getCpf() < 11 || objetoAluno.getCpf() > 11)
-			return "CPF deve possuir 11 digitos";
-
+		/*
+		 * if (objetoAluno.getCpf() < 1000000000 || objetoAluno.getCpf() > 1000000000)
+		 * return "CPF deve possuir 11 digitos";
+		 */
 		// Qtd CEP
-		if (objetoAluno.getCep() < 8 || objetoAluno.getCep() > 8)
-			return "CEP deve possuir 8 digitos";
+//		if (objetoAluno.getCep() < 10000000 || objetoAluno.getCep() > 99999999)
+//			return "CEP deve possuir 8 digitos";
 
 		// Se tudo certo
 		alunoDAO.addAluno(objetoAluno);

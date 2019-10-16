@@ -42,7 +42,7 @@
 							name="senha" placeholder="Enter password">
 					</div>
 					<span class="alert"><%=msg%></span><br><br>
-					<a href="cadastro.html">Create new account</a><br> <br>
+					<a href="cadastro.jsp">Create new account</a><br> <br>
 					<button type="submit" name="button" class="btn btn-block"
 						value="Logar">Login</button>
 					<br>

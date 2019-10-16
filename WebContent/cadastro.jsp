@@ -1,4 +1,5 @@
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <html lang="pt-br" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -30,8 +31,6 @@
     $.validator.addMethod( "semespaço", function( value, element ) {
       return this.optional( element ) || /^\S+$/i.test( value );
     }, "Rm não deve conter espaços" );
-    
-    
     
     $(document).ready(function(){
       $("#formcadastro").validate({
@@ -76,7 +75,6 @@
                 
               },
               
-              
               submitHandler: function(form){
                 alert("Cadastrado")
               }
@@ -94,10 +92,20 @@
 
       <div class="container edit">
         <h2>Cadastro</h2>
+        
+        <%
+		String msg;
+		if (request.getAttribute("msg") != null) {
+			msg = (String) request.getAttribute("msg");
+		} else
+			msg = "";
+	%>
+	
         <div class="row">
           <div class="col-3"></div>
           <div class="col-md-6 col-sm-6 col-xs-12 marcador">
-            <form class="form-container" action="cadastro.html" method="post" id="formcadastro">
+            <form class="form-container" action="UserServlet" method="post" id="formcadastro">
+            <input type="hidden" name="action" value="Cadastrar"> <!-- Codigozin -->
               <div class="form-group">
                 <label for="">RM</label><br>
                 <input type="text" name="rm" placeholder="RM" id="rm">
@@ -130,7 +138,8 @@
                   <label for="">Confirmar senha</label><br>
                   <input type="password" name="confirmesenha" placeholder="Confirmar Senha" id="confirmesenha">
               </div>
-              <button type="submit" name="button" class="btn btn-block" id="Cadastrar" ><a href="login,jsp" class="link">Cadastrar</a></button>
+              <span><%=msg%></span><br><br>
+              <button type="submit" name="button" class="btn btn-block" id="Cadastrar" >Cadastrar</button>
 
             </form>
           </div>
@@ -139,6 +148,5 @@
   </body>
 
   </html>
-
 
 </html>
