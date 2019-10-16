@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <html lang="pt-br" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -10,6 +12,56 @@
     <script src="https://kit.fontawesome.com/c34d53500c.js" crossorigin="anonymous"></script>
   </head>
   <body>
+  
+  <div id="msg" class="container">
+   <div id="msg-top" style="padding:10px 0px;">
+     <p class="titlechat">Fabia - Chatbot</p>
+   </div>
+    <div class="chat-container"></div>
+     <form class="form-container" action="" method="post">
+      <input type="text" id="question" name="question" placeholder="Digite sua mensagem..." class="form" required/>
+      <div class="btn-group controls">
+        <select class="botao" id="idioma">
+					<option value="pt" selected="selected">Português</option>
+					<option value="en">Inglês</option>
+					<option value="de">Alemão</option>
+					<option value="ar">Árabe</option>
+					<option value="bg">Búlgaro</option>
+					<option value="ca">Catalão</option>
+					<option value="zh">Chinês Simplificado</option>
+					<option value="zh-TW">Chinês Tradicional</option>
+					<option value="hr">Croata</option>
+					<option value="da">Dinamarquês</option>
+					<option value="sk">Eslovaco</option>
+					<option value="sl">Esloveno</option>
+					<option value="es">Espanhol</option>
+					<option value="et">Estoniano</option>
+					<option value="fi">Finlandês</option>
+					<option value="fr">Francês</option>
+					<option value="el">Grego</option>
+					<option value="he">Hebraico</option>
+					<option value="hi">Hindi</option>
+					<option value="nl">Holandês</option>
+					<option value="hu">Húngaro</option>
+					<option value="it">Italiano</option>
+					<option value="ja">Japonês</option>
+					<option value="ko">Koreano</option>
+					<option value="nb">Norueguês</option>
+					<option value="pl">Polonês</option>
+					<option value="ro">Romeno</option>
+					<option value="ru">Russo</option>
+					<option value="sv">Sueco</option>
+					<option value="cs">Tcheco</option>
+					<option value="tr">Turco</option>
+				</select>
+        <button id="sendQuestion" type="button" name="button" class="botao bt">Send</button>
+        </div>
+        </form>
+     </div>  
+     
+    <script type="text/javascript" src="scripts/assistant.js"></script>
+	<script type="text/javascript" src="scripts/tts.js"></script>
+	<script type="text/javascript" src="scripts/stt.js"></script>
 
     <div id="home">
       <div class="text">
@@ -30,7 +82,7 @@
       <ul class="navbar-nav mr-auto">
         <li class="divisor" role="separator"></li>
         <li class="nav-item">
-          <a class="nav-link" href="conteudo.html">Home</a>
+          <a class="nav-link" href="conteudo.jsp">Home</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="#dropdown_target" href="#">Capítulos</a>
@@ -38,17 +90,17 @@
 
         <div class="dropdown-menu" aria-labelledby="dropdown_target">
           <ul class="navbar-nav">
-          <a class="dropdown-item" href="cap2.html">Capítulo 2</a>
+          <a class="dropdown-item" href="cap2.jsp">Capítulo 2</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="cap3.html">Capítulo 3</a>
+          <a class="dropdown-item" href="cap3.jsp">Capítulo 3</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="cap4.html">Capítulo 4</a>
+          <a class="dropdown-item" href="cap4.jsp">Capítulo 4</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="cap5.html">Capítulo 5</a>
+          <a class="dropdown-item" href="cap5.jsp">Capítulo 5</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="cap6.html">Capítulo 6</a>
+          <a class="dropdown-item" href="cap6.jsp">Capítulo 6</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="cap7.html">Capítulo 7</a>
+          <a class="dropdown-item" href="cap7.jsp">Capítulo 7</a>
         </ul>
 
         </div>
@@ -57,11 +109,15 @@
 
       <ul class="navbar-nav ml-auto">      
       <!-- <li class="nav-item">
-        <a class="nav-link" href="admin.html">Admin</a>
+        <a class="nav-link" href="admin.jsp">Admin</a>
       </li> -->
+      
       <li class="nav-item">
-          <a class="nav-link" href="usuario.html"><i class="fas fa-user"></i>Meus dados</a>
-      </li>
+				<form action="UserServlet" method="post">
+					<input type="hidden" value="Exibir" name="action">
+					<input type="hidden" value=<%= session.getAttribute("rm") %> name="rm">
+					<button class="dados" type="submit" name="button"><i class="fas fa-user"></i>Meus Dados</button>
+				</form>	
       <li class="divisor" role="separator"></li>
       <li class="nav-item">
         <a class="nav-link" href="login.jsp">Sair</a>
@@ -106,4 +162,16 @@
         </div>
       </footer>
   </body>
+  <script type="text/javascript">
+   $(document).ready(function(){
+      var c=1;
+      $("#msg-top").click(function(){
+         c++;
+        if(c%2==0)
+         $("#msg").animate({bottom:"0px"},500);
+       else
+        $("#msg").animate({bottom:"-350px"},500);
+      });
+    });
+</script>
   </html>

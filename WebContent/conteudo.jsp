@@ -28,32 +28,27 @@
 		<div class="collapse navbar-collapse" id="collapse_target">
 			<ul class="navbar-nav mr-auto">
 				<li class="divisor" role="separator"></li>
-				<li class="nav-item"><a class="nav-link" href="conteudo.html">Home</a>
+				<li class="nav-item">
+				<a class="nav-link" href="conteudo.jsp">Home</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="chat.jsp">Chatbot</a>
 				</li>
 			</ul>
 
 			<ul class="navbar-nav ml-auto">
 				<!--         <li class="nav-item"> -->
-				<!--           <a class="nav-link" href="admin.html">Admin</a> -->
+				<!--           <a class="nav-link" href="admin.jsp">Admin</a> -->
 				<!--         </li> -->
 				<li class="nav-item">
 				<form action="UserServlet" method="post">
 					<input type="hidden" value="Exibir" name="action">
 					<input type="hidden" value=<%= session.getAttribute("rm") %> name="rm">
-					<button type="submit" name="button">Meus Dados</button>
-				</form>
-				
-<!-- 				<a class="nav-link" href="usuario.html"><i -->
-<!-- 						class="fas fa-user"></i>Meus dados</a> -->
-				
-						
-						
-						
-						
-						
-						</li>
+					<button class="dados" type="submit" name="button"><i class="fas fa-user"></i>Meus Dados</button>
+				</form>									
 				<li class="divisor" role="separator"></li>
-				<li class="nav-item"><a class="nav-link" href="login.jsp">Sair</a>
+				<li class="nav-item">
+					<a class="nav-link" href="login.jsp">Sair</a>
 				</li>
 			</ul>
 		</div>
@@ -65,19 +60,18 @@
 			<h1 class="display-4">Cursos de Nivelamento</h1>
 		</div>
 		<div class="cursos">
-			<h3>PortuguÃªs</h3>
-			<h3>MatemÃ¡tica</h3>
+			<h3>Português</h3>
+			<h3>Matemática</h3>
 			<h3 class="active">Algoritmo</h3>
 		</div>
 		<ul class="lista">
-			<li><a href="cap1.html">CapÃ­tulo 1 - Principios da
-					programaÃ§Ã£o</li>
-			<li><a href="cap2.html">Capitulo 2 - Tomada de DecisÃ£o</li>
-			<li><a href="cap3.html">Capitulo 3 - Estruturas de RepetiÃ§Ã£o</li>
-			<li><a href="cap4.html">Capitulo 4 - Vetores e Matrizes</li>
-			<li><a href="cap5.html">Capitulo 5 - AnÃ¡lise AlgorÃ­tmica</li>
-			<li><a href="cap6.html">Capitulo 6 - OrdenaÃ§Ã£o de Vetores</li>
-			<li><a href="cap7.html">Capitulo 7 - Busca</li>
+			<li><a href="cap1.jsp">Capítulo 1 - Principios da programação</li>
+			<li><a href="cap2.jsp">Capítulo 2 - Tomada de Decisão</li>
+			<li><a href="cap3.jsp">Capítulo 3 - Estruturas de Repetição</li>
+			<li><a href="cap4.jsp">Capítulo 4 - Vetores e Matrizes</li>
+			<li><a href="cap5.jsp">Capítulo 5 - Análise Algorítmica</li>
+			<li><a href="cap6.jsp">Capítulo 6 - Ordenação de Vetores</li>
+			<li><a href="cap7.jsp">Capítulo 7 - Busca</li>
 		</ul>
 	</div>
 
@@ -96,8 +90,8 @@
 					</div>
 				</div>
 				<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12">
-					<p class="lead">LocalizaÃ§Ã£o</p>
-					<p class="address">AclimaÃ§Ã£o, Av. Lins de Vasconcelos, 1222 e
+					<p class="lead">Localização</p>
+					<p class="address">Aclimação, Av. Lins de Vasconcelos, 1222 e
 						1264</p>
 					<div class="local">
 						<p>

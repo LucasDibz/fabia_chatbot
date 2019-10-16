@@ -102,3 +102,15 @@ h2{color: white;}
   border-radius: 20px;
 
 }
+
+.dados{
+	background: transparent;
+	color: #ed145b;
+	font-size: 20px; 
+	margin: 30px 20px;
+	font-weight: 20;	
+	border: none;
+	text-transform: uppercase; letter-spacing: .1rem;
+	
+}
+

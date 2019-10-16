@@ -25,7 +25,7 @@
       <ul class="navbar-nav mr-auto">
         <li class="divisor" role="separator"></li>
         <li class="nav-item">
-          <a class="nav-link" href="conteudo.html">Home</a>
+          <a class="nav-link" href="conteudo.jsp">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="chat.jsp">Chatbot</a>
@@ -36,19 +36,19 @@
 
         <div class="dropdown-menu" aria-labelledby="dropdown_target">
           
-          <a class="dropdown-item" href="cap1.html">Capitulo 1</a>
+          <a class="dropdown-item" href="cap1.jsp">Capitulo 1</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="cap2.html">Capitulo 2</a>
+          <a class="dropdown-item" href="cap2.jsp">Capitulo 2</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="cap3.html">Capitulo 3</a>
+          <a class="dropdown-item" href="cap3.jsp">Capitulo 3</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="cap4.html">Capitulo 4</a>
+          <a class="dropdown-item" href="cap4.jsp">Capitulo 4</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="cap5.html">Capitulo 5</a>
+          <a class="dropdown-item" href="cap5.jsp">Capitulo 5</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="cap6.html">Capitulo 6</a>
+          <a class="dropdown-item" href="cap6.jsp">Capitulo 6</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="cap7.html">Capitulo 7</a>
+          <a class="dropdown-item" href="cap7.jsp">Capitulo 7</a>
        
         </div>
         </li>
@@ -56,14 +56,14 @@
 
       <ul class="navbar-nav ml-auto">
         <!-- <li class="nav-item">
-          <a class="nav-link" href="admin.html">Admin</a>
+          <a class="nav-link" href="admin.jsp">Admin</a>
         </li> -->
       <li class="nav-item">
-          <a class="nav-link" href="usuario.html"><i class="fas fa-user"></i>Meus dados</a>
+          <a class="nav-link" href="usuario.jsp"><i class="fas fa-user"></i>Meus dados</a>
       </li>
       <li class="divisor" role="separator"></li>
       <li class="nav-item">
-        <a class="nav-link" href="index.html">Sair</a>
+        <a class="nav-link" href="login.jsp">Sair</a>
       </li>
       </ul>
     </div>
@@ -74,7 +74,7 @@
       <div class="row">
         <div class="col-md-8 col-sm-8 col-xs-12 marcador">
           <h2 class="display-4">Meus dados cadastrados</h2>
-          <form class="form-container" action="cadastro.html" method="post" id="formcadastro">
+          <form class="form-container" action="cadastro.jsp" method="post" id="formcadastro">
             <div class="form-group">
               <label for="rm">RM</label><br>
               <input type="text" name="rm" value="${aluno.getRm() }" id="rm">

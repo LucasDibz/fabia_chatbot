@@ -236,3 +236,15 @@ button:disabled {
 	margin-right: 15px;
 	
 }
+
+.dados{
+	background: transparent;
+	color: #ed145b;
+	font-size: 20px; 
+	margin: 20px 20px;
+	font-weight: 20;	
+	border: none;
+	text-transform: uppercase; letter-spacing: .1rem;
+	
+}
+

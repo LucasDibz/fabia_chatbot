@@ -105,3 +105,170 @@ footer{width: 100%; background-color: black; padding: 50px 0px;}
 .fa-twitter{
   color: #00aced;
 }
+
+.dados{
+	background: transparent;
+	color: #ed145b;
+	font-size: 20px; 
+	margin: 30px 20px;
+	font-weight: 20;	
+	border: none;
+	text-transform: uppercase; letter-spacing: .1rem;
+	
+}
+
+.chat-container{
+  margin: 10px auto;
+  width: 280px;
+  height: 220px;
+  background: white;
+  color: #363636;
+  font-size: 14px;
+  font-family: verdana;
+  overflow: scroll;
+  border: 5px solid black;
+}
+
+.titlechat{
+  color: #ed145b;
+  font-size: 20px;
+  font-weight: 30px;
+  text-align: center;
+}
+
+.form-container{
+  padding:5px;
+}
+
+.form-container input[type="text"]{
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  height: 40px;
+  color: black;
+  font-size: 16px;
+  width: 270px;
+  margin-left: 10px;
+
+}
+
+.send{
+  background: black;
+  color: #ed145b;
+	width: 100px;
+}
+
+.botao{
+  background: black;
+  color: #ed145b;
+	font-size: 16px;
+	border: 0;
+	border-top: 2px black solid;
+  border-bottom: 2px black solid;
+	border-radius: 3px;
+	text-shadow: 0.05em 0.05em black;
+	margin-right: 15px;
+  height: 40px;
+  display: inline;
+
+}
+
+.bt{
+  width: 100px;
+
+}
+
+.controls{
+  margin-left: 8px;
+  margin-top: 15px;
+}
+
+ #msg{
+    padding:0;
+    margin:0;
+    position:fixed;
+    bottom:-350px;
+    right:10px;
+    background-color:SlateGray;
+    max-width:300px;
+    height:400px;
+    border:1px solid black;
+    z-index: 9;
+ }
+ 
+ #msg-top{
+    background-color:black;
+    height:50px;
+    width:100%;
+    cursor:pointer;
+ } 
+ 
+ 
+ 
+ 
+ .bot {
+	display: block;
+	background: #3395d6;
+	color: white;
+	float: left;
+	clear: both;
+	margin: 5px 20px 15px 45px;
+}
+
+.bot:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 2px solid transparent;
+	border-right-color: #3395d6;
+	border-radius: 3px;
+/* 	border-left: 0; */
+/* 	border-top: 0; */
+/* 	margin-top: -10px; */
+/* 	margin-left: -20px; */
+}
+
+.me {
+	display:block;
+	clear: both;
+	background: #EEE7E0;
+	color: black;
+	float: right;
+	margin: 5px 45px 15px 20px;
+}
+
+.me:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 2px solid transparent;
+	border-radius:3px;
+	border-left-color: #EEE7E0;
+/* 	border-right: 0; */
+/* 	border-top: 0; */
+/* 	margin-top: -10px; */
+/* 	margin-right: -20px; */
+}
+
+.chat {
+	border-radius: 5px;
+	box-shadow: 0 0 6px #B2B2B2;
+	display: block;
+	padding: 10px 18px;
+	position: relative;
+	vertical-align: top;
+}
+
+.fa-kiwi-bird{
+	
+	padding-right: 20px;
+	
+	
+}
+
