@@ -52,7 +52,7 @@ public class AlunoDAO {
 		rs = stmt.executeQuery();
 		if (rs.next()) {
 			return new Aluno(rs.getInt("NR_RM"), rs.getString("NM_ALUNO"), rs.getString("DS_EMAIL"),
-					rs.getString("SN_ALUNO"), rs.getInt("NR_TELEFONE"), rs.getInt("NR_CPF"), rs.getInt("NR_CEP"));
+					rs.getString("SN_ALUNO"), rs.getLong("NR_TELEFONE"), rs.getLong("NR_CPF"), rs.getInt("NR_CEP"));
 		} else
 			return new Aluno();
 	}
