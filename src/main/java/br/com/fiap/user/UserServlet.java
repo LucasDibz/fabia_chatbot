@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import br.com.fiap.beans.Aluno;
 import br.com.fiap.bo.AlunoBO;
+import br.com.fiap.dao.AlunoDAO;
 
 @WebServlet("/UserServlet")
 public class UserServlet extends HttpServlet {
@@ -41,6 +42,15 @@ public class UserServlet extends HttpServlet {
 				retorno = "usuario.jsp";
 			} catch (Exception e) {
 				System.out.println("Exibir deu ruim");
+				e.printStackTrace();
+			}
+			break;
+		case "ExibirAlunos":
+			try {
+				listarAlunos(request);
+				retorno = "admin.jsp";
+			} catch (Exception e) {
+				System.out.println("Listar Alunos deu ruim");
 				e.printStackTrace();
 			}
 			break;
@@ -88,6 +98,11 @@ public class UserServlet extends HttpServlet {
 		System.out.println("rm = " + rm);
 		Aluno aluno = bo.buscaAluno(rm);
 		request.setAttribute("aluno", aluno);
+	}
+
+	private void listarAlunos(HttpServletRequest request) throws Exception {
+		AlunoDAO a = new AlunoDAO();
+		request.setAttribute("lista", a.getListaAlunos());
 	}
 
 }

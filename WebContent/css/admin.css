@@ -1,4 +1,4 @@
-body{}
+body{background-image: url(../Imagens/gradiente.jpg);}
 
 footer{width: 100%; background-color: black; padding: 50px 0px;}
 
@@ -43,6 +43,21 @@ footer{width: 100%; background-color: black; padding: 50px 0px;}
 
 }
 
+table, tr, th, td {
+	border: 1px solid gray;
+}
+
+th,td {
+	padding-left: 5px;
+}
+
+th {
+	width: 30%;
+	background: black;
+	color: #ed145b;
+	font-weight: bold;
+}
+
 .fa-user{
   padding-right:  10px;
 }
@@ -59,4 +74,32 @@ footer{width: 100%; background-color: black; padding: 50px 0px;}
 
 .fa-twitter{
   color: #00aced;
+}
+
+.delet{
+  background: black;
+  color:#ed145b;
+  display: inline-block;
+}
+
+.delet:hover{
+  background: #ed145b;
+  color: black;
+
+}
+
+.alter{
+  background: black;
+  color: #ed145b;
+
+}
+
+.alter:hover{
+  background: #ed145b;
+  color: black;
+
+}
+
+#comando{
+  padding-left: 50px;
 }

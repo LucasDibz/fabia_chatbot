@@ -1,0 +1,19 @@
+DDD
+
+A classe mais complexa é a Translator.java
+ src > main > java > br.com.fiap.watson_api > Translator.java
+
+Tanto os metodos translateMe quanto o translateBot;
+
+
+Caso seja obrigatorio a avaliação de classes na camada de DAO/BO
+ src > main > java > br.com.fiap.bo > AlunoBO.java
+Metodo: novoAluno
+ src > main > java > br.com.fiap.bo > ProgressaoBO.java
+Metodo: addProgressao
+
+Metodos input:
+novoAluno
+
+Metodos Output (dao)
+getAluno

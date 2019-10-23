@@ -37,9 +37,13 @@
 			</ul>
 
 			<ul class="navbar-nav ml-auto">
-				<!--         <li class="nav-item"> -->
-				<!--           <a class="nav-link" href="admin.jsp">Admin</a> -->
-				<!--         </li> -->
+				        <li class="nav-item">
+<!-- 				<form action="UserServlet" method="post"> -->
+<!-- 					<input type="hidden" value="ExibirAlunos" name="action"> -->
+<%-- 					<input type="hidden" value=<%= session.getAttribute("rm") %> name="rm"> --%>
+<!-- 					<button class="dados" type="submit" name="button"><i class="fas fa-user"></i>Admin</button> -->
+<!-- 				</form>									 -->
+				        </li>
 				<li class="nav-item">
 				<form action="UserServlet" method="post">
 					<input type="hidden" value="Exibir" name="action">

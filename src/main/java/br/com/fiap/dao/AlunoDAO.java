@@ -3,6 +3,8 @@ package br.com.fiap.dao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 
 import br.com.fiap.beans.Aluno;
 import br.com.fiap.conexao.Conexao;
@@ -55,6 +57,18 @@ public class AlunoDAO {
 					rs.getString("SN_ALUNO"), rs.getLong("NR_TELEFONE"), rs.getLong("NR_CPF"), rs.getInt("NR_CEP"));
 		} else
 			return new Aluno();
+	}
+
+	public List<String> getListaAlunos() throws Exception {
+		List<String> listaAlunos = new ArrayList<String>();
+		stmt = con.prepareStatement("SELECT * FROM T_CHATBOT_ALUNO");
+		rs = stmt.executeQuery();
+		while (rs.next()) {
+			listaAlunos.add(Integer.toString(rs.getInt("NR_RM")));
+			listaAlunos.add(rs.getString("NM_ALUNO"));
+		}
+
+		return listaAlunos;
 	}
 
 	public int loginAluno(int cod, String senha) throws Exception {

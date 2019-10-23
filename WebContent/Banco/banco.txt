@@ -1,0 +1,288 @@
+-- Gerado por Oracle SQL Developer Data Modeler 19.2.0.182.1216
+--   em:        2019-10-05 14:05:08 BRT
+--   site:      Oracle Database 11g
+--   tipo:      Oracle Database 11g
+
+/*
+Componentes do Grupo:
+RM 83931	- Leonardo Santos
+RM 82270	- Luiz Henrique
+RM 82029	- Lucas Ferreira Dib
+RM 83821	- F�bio Monteiro
+
+/*
+DROP TABLE t_chatbot_aluno CASCADE CONSTRAINTS;
+DROP TABLE t_chatbot_conteudo CASCADE CONSTRAINTS;
+DROP TABLE t_chatbot_disciplina CASCADE CONSTRAINTS;
+DROP TABLE t_chatbot_matricula CASCADE CONSTRAINTS;
+DROP TABLE t_chatbot_progressao CASCADE CONSTRAINTS;
+*/
+
+CREATE TABLE t_chatbot_aluno (
+    nr_rm         NUMBER(5) NOT NULL,
+    nm_aluno      VARCHAR2(50) NOT NULL,
+    ds_email      VARCHAR2(70) NOT NULL,
+    sn_aluno      VARCHAR2(20) NOT NULL,
+    nr_telefone   NUMBER(11),
+    nr_cpf        NUMBER(11) NOT NULL,
+    nr_cep        NUMBER(8) NOT NULL
+);
+
+ALTER TABLE t_chatbot_aluno ADD CONSTRAINT pk_aluno PRIMARY KEY ( nr_rm );
+
+CREATE TABLE t_chatbot_conteudo (
+    cd_conteudo     NUMBER(3) NOT NULL,
+    cd_disciplina   NUMBER(2) NOT NULL,
+    ds_titulo       VARCHAR2(80) NOT NULL,
+    lc_conteudo     VARCHAR2(50) NOT NULL
+);
+
+ALTER TABLE t_chatbot_conteudo ADD CONSTRAINT pk_conteudo PRIMARY KEY ( cd_conteudo );
+
+CREATE TABLE t_chatbot_disciplina (
+    cd_disciplina   NUMBER(2) NOT NULL,
+    nm_disciplina   VARCHAR2(30) NOT NULL,
+    st_status       NUMBER(1) NOT NULL
+);
+
+ALTER TABLE t_chatbot_disciplina ADD CONSTRAINT pk_disciplina PRIMARY KEY ( cd_disciplina );
+
+ALTER TABLE t_chatbot_disciplina ADD CONSTRAINT un_nm_disciplina UNIQUE ( nm_disciplina );
+
+CREATE TABLE t_chatbot_matricula (
+    nr_rm           NUMBER(5) NOT NULL,
+    cd_disciplina   NUMBER(2) NOT NULL,
+    dt_inicio       DATE NOT NULL,
+    dt_termino      DATE
+);
+
+ALTER TABLE t_chatbot_matricula ADD CONSTRAINT ck_matric_data CHECK ( dt_termino > dt_inicio );
+
+ALTER TABLE t_chatbot_matricula ADD CONSTRAINT pk_matricula PRIMARY KEY ( nr_rm,
+                                                                          cd_disciplina );
+CREATE TABLE t_chatbot_progressao (
+    cd_conteudo     NUMBER(3) NOT NULL,
+    nr_rm           NUMBER(5) NOT NULL,
+    cd_disciplina   NUMBER(2) NOT NULL,
+    st_status       NUMBER(1) NOT NULL,
+    st_progressao   NUMBER(3) NOT NULL
+);
+
+ALTER TABLE t_chatbot_progressao
+    ADD CONSTRAINT pk_progressao PRIMARY KEY ( cd_conteudo,
+                                               nr_rm,
+                                               cd_disciplina );
+
+ALTER TABLE t_chatbot_conteudo
+    ADD CONSTRAINT fk_conteudo_disc FOREIGN KEY ( cd_disciplina )
+        REFERENCES t_chatbot_disciplina ( cd_disciplina );
+
+ALTER TABLE t_chatbot_matricula
+    ADD CONSTRAINT fk_matric_aluno FOREIGN KEY ( nr_rm )
+        REFERENCES t_chatbot_aluno ( nr_rm );
+
+ALTER TABLE t_chatbot_matricula
+    ADD CONSTRAINT fk_matric_disc FOREIGN KEY ( cd_disciplina )
+        REFERENCES t_chatbot_disciplina ( cd_disciplina );
+
+ALTER TABLE t_chatbot_progressao
+    ADD CONSTRAINT fk_prog_cont FOREIGN KEY ( cd_conteudo )
+        REFERENCES t_chatbot_conteudo ( cd_conteudo );
+
+ALTER TABLE t_chatbot_progressao
+    ADD CONSTRAINT fk_prog_matric FOREIGN KEY ( nr_rm,
+                                                cd_disciplina )
+        REFERENCES t_chatbot_matricula ( nr_rm,
+                                         cd_disciplina );
+
+
+
+/*
+Componentes do Grupo:
+RM 83931 - Leonardo Santos
+RM 82270 - Luiz Henrique
+RM 82029 - Lucas Ferreira Dib
+RM 83821 - F�bio Monteiro
+*/
+--------------------------------------- ALUNO -----------------------------------------
+
+-- adicionar aluno
+INSERT INTO T_CHATBOT_ALUNO (NR_RM, NM_ALUNO, DS_EMAIL, SN_ALUNO, NR_TELEFONE, NR_CPF, NR_CEP)
+VALUES (83931,'Leonardo Santos','lionnard@live.com',123456789,11968380577,44794308817,06786560);
+
+INSERT INTO T_CHATBOT_ALUNO (NR_RM, NM_ALUNO, DS_EMAIL, SN_ALUNO, NR_TELEFONE, NR_CPF, NR_CEP) 
+VALUES (88617,'Lawrence','Etiam.dictum@cursuset.com','GAM21YSE7KL',42989358985,74879984176,52744991);
+
+INSERT INTO T_CHATBOT_ALUNO (NR_RM, NM_ALUNO, DS_EMAIL, SN_ALUNO, NR_TELEFONE, NR_CPF, NR_CEP)
+VALUES (71222,'Marvin','at@congue.com','FCH11ENS1OA',03158662535,64885617628,35968622);
+ 
+INSERT INTO T_CHATBOT_ALUNO (NR_RM, NM_ALUNO, DS_EMAIL, SN_ALUNO, NR_TELEFONE, NR_CPF, NR_CEP) 
+VALUES (32515,'Blake','magna@orciluctus.com','ERS02TMH0DD',53646345179,94545096972,89213183);
+
+INSERT INTO T_CHATBOT_ALUNO (NR_RM, NM_ALUNO, DS_EMAIL, SN_ALUNO, NR_TELEFONE, NR_CPF, NR_CEP)
+VALUES (82442,'Colton','sceleris@sociis.com','TBT75NXX5GC',80393763211,26133727279,45530498);
+
+-- update senha do aluno
+UPDATE T_CHATBOT_ALUNO 
+SET SN_ALUNO = 987654321 
+WHERE NR_RM = 83931;
+
+-- delete aluno
+DELETE FROM T_CHATBOT_ALUNO 
+WHERE NR_RM = 88617;
+
+-- get aluno
+SELECT * FROM T_CHATBOT_ALUNO 
+WHERE NR_RM = 83931;
+
+-- login aluno
+SELECT NR_RM, SN_ALUNO 
+FROM T_CHATBOT_ALUNO 
+WHERE NR_RM = 83931 AND SN_ALUNO = 987654321;
+
+--------------------------------------- DISCIPLINA -----------------------------------------
+
+-- add disciplina
+INSERT INTO T_CHATBOT_DISCIPLINA(CD_DISCIPLINA,NM_DISCIPLINA,ST_STATUS) 
+VALUES(1,'Computational Thinking',1);
+
+INSERT INTO T_CHATBOT_DISCIPLINA(CD_DISCIPLINA,NM_DISCIPLINA,ST_STATUS) 
+VALUES(2,'Domain Driven Design',1);
+
+INSERT INTO T_CHATBOT_DISCIPLINA(CD_DISCIPLINA,NM_DISCIPLINA,ST_STATUS) 
+VALUES(3,'Banco de Dados',1);
+
+INSERT INTO T_CHATBOT_DISCIPLINA(CD_DISCIPLINA,NM_DISCIPLINA,ST_STATUS) 
+VALUES(4,'Web',1);
+
+INSERT INTO T_CHATBOT_DISCIPLINA(CD_DISCIPLINA,NM_DISCIPLINA,ST_STATUS) 
+VALUES(5,'Design de Software',1);
+
+-- update status
+UPDATE T_CHATBOT_DISCIPLINA 
+SET ST_STATUS = 1 -- status ativo(1)/inativo(0)
+WHERE CD_DISCIPLINA = 1;
+
+-- delete disciplina
+DELETE FROM T_CHATBOT_DISCIPLINA WHERE CD_DISCIPLINA = 1;
+
+-- get disciplina
+SELECT * FROM T_CHATBOT_DISCIPLINA WHERE CD_DISCIPLINA = 1;
+
+--------------------------------------- CONTEUDO -----------------------------------------
+
+-- add conteudo
+INSERT INTO T_CHATBOT_CONTEUDO(CD_CONTEUDO,CD_DISCIPLINA,DS_TITULO,LC_CONTEUDO) 
+VALUES (10,1,'La�os de Repeti��o','C:\USERS\LEONARD\CT\LA�OS DE REPETI��O\la�os.pdf'); -- ct
+
+INSERT INTO T_CHATBOT_CONTEUDO(CD_CONTEUDO,CD_DISCIPLINA,DS_TITULO,LC_CONTEUDO) 
+VALUES (11,5,'Diagramas UML','C:\USERS\LEONARD\DESIGN\DIAGRAMAS\UML.pdf'); --design
+
+INSERT INTO T_CHATBOT_CONTEUDO(CD_CONTEUDO,CD_DISCIPLINA,DS_TITULO,LC_CONTEUDO) 
+VALUES (12,4,'Javascript','C:\USERS\LEONARD\WEB\JAVASCRIPT\JavaScript.pdf'); -- web
+
+INSERT INTO T_CHATBOT_CONTEUDO(CD_CONTEUDO,CD_DISCIPLINA,DS_TITULO,LC_CONTEUDO) 
+VALUES (13,3,'Modelagem de dados','C:\USERS\LEONARD\BD\MODELAGEM\modelagem.pdf'); -- BD
+
+INSERT INTO T_CHATBOT_CONTEUDO(CD_CONTEUDO,CD_DISCIPLINA,DS_TITULO,LC_CONTEUDO) 
+VALUES (14,2,'Sobrecarga','C:\USERS\LEONARD\JAVA\SOBRECARGA\sobrecarga.pdf'); -- java
+
+-- delete conteudo
+DELETE FROM T_CHATBOT_CONTEUDO WHERE CD_CONTEUDO = 10;
+
+-- update conteudo
+UPDATE T_CHATBOT_CONTEUDO 
+SET LC_CONTEUDO = 'C:\USERS\LOCAL\CT\LA�OS DE REPETI��O\la�os2.pdf' 
+WHERE CD_CONTEUDO = 10; 
+
+-- update titulo
+UPDATE T_CHATBOT_CONTEUDO 
+SET DS_TITULO = 'Repeating Loops' 
+WHERE CD_CONTEUDO = 10;
+
+-- get conteudo
+SELECT * FROM T_CHATBOT_CONTEUDO WHERE CD_CONTEUDO = 10;
+
+--------------------------------------- MATRICULA -----------------------------------------
+
+-- add matricula
+INSERT INTO T_CHATBOT_MATRICULA(DT_INICIO,DT_TERMINO,NR_RM,CD_DISCIPLINA)
+VALUES(TO_DATE('12/02/2019','DD/MM/YYYY'), null,83931,1);
+
+INSERT INTO T_CHATBOT_MATRICULA(DT_INICIO,DT_TERMINO,NR_RM,CD_DISCIPLINA)
+VALUES(TO_DATE('12/02/2019','DD/MM/YYYY'), TO_DATE('01/12/2019','DD/MM/YYYY'),83931,2);
+
+INSERT INTO T_CHATBOT_MATRICULA(DT_INICIO,DT_TERMINO,NR_RM,CD_DISCIPLINA)
+VALUES(TO_DATE('12/02/2019','DD/MM/YYYY'), null,83931,3);
+
+INSERT INTO T_CHATBOT_MATRICULA(DT_INICIO,DT_TERMINO,NR_RM,CD_DISCIPLINA)
+VALUES(TO_DATE('12/02/2019','DD/MM/YYYY'), TO_DATE('12/12/2019','DD/MM/YYYY'),83931,4);
+
+INSERT INTO T_CHATBOT_MATRICULA(DT_INICIO,DT_TERMINO,NR_RM,CD_DISCIPLINA)
+VALUES(TO_DATE('12/02/2019','DD/MM/YYYY'), null,83931,5);
+
+INSERT INTO T_CHATBOT_MATRICULA(DT_INICIO,DT_TERMINO,NR_RM,CD_DISCIPLINA)
+VALUES(TO_DATE('12/02/2019','DD/MM/YYYY'), null,88617,3);
+
+INSERT INTO T_CHATBOT_MATRICULA(DT_INICIO,DT_TERMINO,NR_RM,CD_DISCIPLINA)
+VALUES(TO_DATE('12/02/2019','DD/MM/YYYY'), null,71222,3);
+
+INSERT INTO T_CHATBOT_MATRICULA(DT_INICIO,DT_TERMINO,NR_RM,CD_DISCIPLINA)
+VALUES(TO_DATE('12/02/2019','DD/MM/YYYY'), null,32515,3);
+
+INSERT INTO T_CHATBOT_MATRICULA(DT_INICIO,DT_TERMINO,NR_RM,CD_DISCIPLINA)
+VALUES(TO_DATE('12/02/2019','DD/MM/YYYY'), null,82442,3);
+
+INSERT INTO T_CHATBOT_MATRICULA(DT_INICIO,DT_TERMINO,NR_RM,CD_DISCIPLINA)
+VALUES(TO_DATE('12/02/2019','DD/MM/YYYY'), null,88617,2);
+
+-- delete matricula
+DELETE FROM T_CHATBOT_MATRICULA WHERE NR_RM = 83931;
+
+-- update data termino
+UPDATE T_CHATBOT_MATRICULA 
+SET DT_TERMINO = TO_DATE('01/12/2019','DD/MM/YYYY') 
+WHERE NR_RM = 83931 AND CD_DISCIPLINA = 1;
+
+-- get matricula
+SELECT * FROM T_CHATBOT_MATRICULA 
+WHERE NR_RM = 83931 AND CD_DISCIPLINA = 1;
+
+--------------------------------------- PROGRESSAO -----------------------------------------
+
+-- add progressao
+INSERT INTO T_CHATBOT_PROGRESSAO (CD_CONTEUDO,NR_RM,CD_DISCIPLINA,ST_STATUS,ST_PROGRESSAO) 
+VALUES(10,83931,1,1,75); -- 75%
+
+INSERT INTO T_CHATBOT_PROGRESSAO (CD_CONTEUDO,NR_RM,CD_DISCIPLINA,ST_STATUS,ST_PROGRESSAO) 
+VALUES(11,83931,5,1,25); -- 25%
+
+INSERT INTO T_CHATBOT_PROGRESSAO (CD_CONTEUDO,NR_RM,CD_DISCIPLINA,ST_STATUS,ST_PROGRESSAO) 
+VALUES(12,83931,4,1,30); -- 30%
+
+INSERT INTO T_CHATBOT_PROGRESSAO (CD_CONTEUDO,NR_RM,CD_DISCIPLINA,ST_STATUS,ST_PROGRESSAO) 
+VALUES(13,83931,3,1,10); -- 10%
+
+INSERT INTO T_CHATBOT_PROGRESSAO (CD_CONTEUDO,NR_RM,CD_DISCIPLINA,ST_STATUS,ST_PROGRESSAO) 
+VALUES(14,83931,2,1,05); -- 05%
+
+-- delete progressao
+DELETE FROM T_CHATBOT_PROGRESSAO WHERE NR_RM = 83931;
+
+-- update progressao
+UPDATE T_CHATBOT_PROGRESSAO 
+SET ST_PROGRESSAO = 80 -- 80%
+WHERE NR_RM = 83931 AND CD_CONTEUDO = 10;
+
+-- update status
+UPDATE T_CHATBOT_PROGRESSAO 
+SET ST_STATUS = 1  -- status ativo(1)/inativo(0)
+WHERE CD_DISCIPLINA = 1 AND CD_CONTEUDO = 10;
+
+-- get progressao
+SELECT * FROM  T_CHATBOT_PROGRESSAO
+WHERE CD_DISCIPLINA = 1 AND CD_CONTEUDO = 10 AND NR_RM = 83931;
+
+SELECT * FROM  T_CHATBOT_PROGRESSAO
+WHERE CD_DISCIPLINA = 5 AND CD_CONTEUDO = 11 AND NR_RM = 83931;
+

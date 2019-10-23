@@ -55,9 +55,9 @@
       </ul>
 
       <ul class="navbar-nav ml-auto">
-        <!-- <li class="nav-item">
+         <li class="nav-item">
           <a class="nav-link" href="admin.jsp">Admin</a>
-        </li> -->
+        </li> 
       <li class="nav-item">
           <a class="nav-link" href="usuario.jsp"><i class="fas fa-user"></i>Meus dados</a>
       </li>
@@ -74,7 +74,7 @@
       <div class="row">
         <div class="col-md-8 col-sm-8 col-xs-12 marcador">
           <h2 class="display-4">Meus dados cadastrados</h2>
-          <form class="form-container" action="cadastro.jsp" method="post" id="formcadastro">
+          <form class="form-container" action="" method="post" id="formcadastro">
             <div class="form-group">
               <label for="rm">RM</label><br>
               <input type="text" name="rm" value="${aluno.getRm() }" id="rm" readonly>
