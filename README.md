@@ -1,7 +1,7 @@
 # fabia_chatbot
 https://www.facebook.com/FabiaChatbot  
 *Projeto Chatbot - IBM - Fiap  - 2019*\
-Fabia é um chatbot (sendo desenvolvido por alunos) para auxiliar os novos alunos ingressantes na FIAP, integrado a um website, com a finalidade de auxiliar alunos nas matérias de nivelamento da FIAP, respondendo dúvidas enviadas por voz, com respostas em voz.
+Fabia é um chatbot (desenvolvido por alunos do 1º ano da FIAP 2019) para auxiliar os novos alunos ingressantes na FIAP, integrado a um website, com a finalidade de auxiliar alunos nas matérias de nivelamento da FIAP, respondendo dúvidas enviadas por voz, com respostas em voz.
 
 *Tecnologias Utilizadas*\
 IBM Watson Assistant\
