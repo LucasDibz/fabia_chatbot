@@ -9,10 +9,10 @@ Speech to Text\
 Text to Speech\
 Translator\
 MySQLDeveloper\
-OracleDB\
+OracleDB
 
 
-*Integrantes:*\
+*Integrantes:*
 * **Lucas Dib** - RM: 82029 - [LucasDibz](https://github.com/LucasDibz) 
 * **Leonardo Santos** - RM: 83931 - [Leonnard19](https://github.com/Leonnard19) 
 * **Luiz Barone** - RM: 82270 - [BaroneLuiz](https://github.com/BaroneLuiz) 
