@@ -13,7 +13,7 @@ OracleDB\
 
 
 *Integrantes:*\
-Lucas Dib		          	RM: 82029\
-Leonardo Santos			    RM: 83931\
-Luiz Henrique		      	RM: 82270\
-Fabio Monteiro	     		RM: 83821
+* **Lucas Dib** - RM: 82029 - [LucasDibz](https://github.com/LucasDibz) 
+* **Leonardo Santos** - RM: 83931 - [Leonnard19](https://github.com/Leonnard19) 
+* **Luiz Barone** - RM: 82270 - [BaroneLuiz](https://github.com/BaroneLuiz) 
+* **Fabio Monteiro** - RM: 83821 - [Monteifa](https://github.com/Monteifa) 
